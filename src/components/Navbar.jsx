@@ -41,7 +41,7 @@ const Navbar = () => {
 						alt="Logo"
 					/>
 					<span className="ml-2 font-bold text-lg text-gray-900 dark:text-white">
-						Logiicodev
+						Logiicdev
 					</span>
 				</Link>
 
