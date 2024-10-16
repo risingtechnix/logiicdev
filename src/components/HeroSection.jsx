@@ -1,6 +1,6 @@
-import React from "react"
-import {ArrowRightIcon} from "@heroicons/react/24/solid"
-import {motion} from "framer-motion"
+import React from "react";
+import {ArrowRightIcon} from "@heroicons/react/24/solid";
+import {motion} from "framer-motion";
 
 const HeroSection = () => {
 	// Animation Variants
@@ -23,18 +23,18 @@ const HeroSection = () => {
 		<motion.section
 			initial="hidden"
 			animate="visible"
-			className="bg-black dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-lg flex flex-col lg:flex-row items-center justify-between  sm:m-10"
+			className="bg-slate-950 dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-lg flex flex-col lg:flex-row items-center justify-between  sm:m-10"
 		>
 			{/* Left side - Text content */}
 			<motion.div
 				variants={textVariants}
 				className="w-full lg:w-1/2 mb-8 lg:mb-0"
 			>
-				<span className="bg-violet-700 dark:bg-[#F0F8EE] dark:text-[#1D6362] text-black font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4">
+				<span className="bg-violet-300 dark:bg-[#F0F8EE] dark:text-[#1D6362] text-purple-700 font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4">
 					Landing - Support Desk
 				</span>
 				<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight dark:text-[#1D1E25]">
-					LOGIICODEV EXPLORE THE JOURNEY WITH CLIENT VISION TOWARDS A BETTER
+					LOGIICDEV EXPLORE THE JOURNEY WITH CLIENT VISION TOWARDS A BETTER
 					WORLD
 				</h1>
 				<p className="text-gray-300 text-sm sm:text-base lg:text-lg mb-6 dark:text-[#7E8492]">
@@ -48,7 +48,7 @@ const HeroSection = () => {
 					<motion.button
 						whileHover={buttonHover}
 						whileTap={{scale: 0.9}}
-						className="bg-violet-700 dark:bg-[#007aff] dark:text-white text-black px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover:bg-green-600 transition duration-100 w-full sm:w-auto"
+						className="bg-violet-700 dark:bg-[#007aff] dark:text-white text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover: transition duration-100 w-full sm:w-auto"
 					>
 						Get started
 						<ArrowRightIcon className="h-5 w-5 ml-2" />

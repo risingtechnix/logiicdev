@@ -1,156 +1,135 @@
-import React from "react"
-import Slider from "react-slick"
-import {FaChevronLeft, FaChevronRight} from "react-icons/fa"
-
-const CustomNextArrow = (props) => {
-	const {className, style, onClick} = props
-	return (
-		<div
-			className={`${className} bg-purple-600 hover:bg-purple-800 rounded-full shadow-lg p-2 cursor-pointer z-10`}
-			style={{...style, display: "block", right: "15px"}}
-			onClick={onClick}
-		>
-			<FaChevronRight className="text-white" />
-		</div>
-	)
-}
-
-const CustomPrevArrow = (props) => {
-	const {className, style, onClick} = props
-	return (
-		<div
-			className={`${className} bg-purple-600 hover:bg-purple-800 rounded-full shadow-lg p-2 cursor-pointer z-10`}
-			style={{...style, display: "block", left: "15px"}}
-			onClick={onClick}
-		>
-			<FaChevronLeft className="text-white" />
-		</div>
-	)
-}
+import React from 'react';
+import { FaBatteryFull, FaMicrochip, FaProjectDiagram, FaBolt, FaMicrophone, FaCheckCircle } from 'react-icons/fa'; 
+import { motion } from 'framer-motion';
 
 const Advantages = () => {
-	const settings = {
-		dots: true, // Enable dots navigation
-		infinite: true, // Make the carousel infinite
-		speed: 500, // Transition speed
-		slidesToShow: 2, // Show 2 cards at a time
-		slidesToScroll: 2, // Scroll 2 cards at a time
-		autoplay: true, // Enable autoplay
-		autoplaySpeed: 3000, // Set autoplay speed to 3 seconds
-		arrows: true, // Enable arrows for navigation
-		nextArrow: <CustomNextArrow />, // Custom next arrow
-		prevArrow: <CustomPrevArrow />, // Custom prev arrow
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 2, // Show 2 cards at a time for screens above 1024px
-					slidesToScroll: 2, // Scroll 2 cards at a time
-				},
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1, // Show 1 card at a time for smaller screens
-					slidesToScroll: 1, // Scroll 1 card at a time
-				},
-			},
-		],
-	}
+  const cards = [
+    {
+      icon: <FaMicrochip size={30} />,
+      title: 'Simulation',
+      description:
+        'Logiicdev excels in cell-level, package, co-simulation, signal and power integrity, and analog/mixed-signal block verification.',
+    },
+    {
+      icon: <FaBatteryFull size={40} />,
+      title: 'AI Battery Management',
+      description:
+        'Our AI Battery IP provides a real-time virtual environment to test control algorithms without physical prototypes.',
+    },
+    {
+      icon: <FaProjectDiagram size={30} />,
+      title: 'Project Coordination & Consultancy',
+      description:
+        'Leveraging deep semiconductor expertise, we help clients accelerate business goals by transforming technical knowledge into practical solutions.',
+    },
+    {
+      icon: <FaBolt size={30} />,
+      title: 'Hi-Speed Power Electronics',
+      description:
+        'Our GaN FETs enable faster switching and reduced losses for applications in battery management, fast switching, and load handling.',
+    },
+    {
+      icon: <FaMicrophone size={30} />,
+      title: 'FPGA & IP',
+      description:
+        'Logiicdev offers custom FPGA solutions as cost-effective, efficient alternatives to ASICs, minimizing hidden expenses and production delays.',
+    },
+    {
+      icon: <FaCheckCircle size={30} />,
+      title: 'Verification & Validation',
+      description:
+        'We ensure optimal hardware performance with advanced testing strategies for mixed signals, high-speed tech, and power modes, preventing costly redesigns.',
+    },
+  ];
 
-	return (
-		<section className="bg-gradient-to-r from-gray-900 to-purple-900 text-white py-16 px-8 sm:px-16 overflow-hidden">
-			<div className="container mx-auto text-center mb-10">
-				<h2 className="text-3xl sm:text-4xl font-bold mb-6">
-					Here's how we can help you: advantages.
-				</h2>
-				<p className="max-w-xl mx-auto text-gray-400">
-					The Benefits of Partnering with Us: Our Competitive Edge and Your
-					Success.
-				</p>
-				<button className="mt-6 bg-white text-purple-900 font-semibold py-2 px-6 rounded-full shadow-md hover:bg-gray-300 transition duration-200">
-					Get Started
-				</button>
-			</div>
+  // Motion variant for card animations
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: index * 0.2,
+        duration: 0.5,
+      },
+    }),
+  };
 
-			{/* Carousel for Advantages */}
-			<div className="container mx-auto px-4 sm:px-0">
-				<Slider {...settings}>
-					{/* Card 1 */}
-					<div className="p-4">
-						<div className="bg-purple-600 p-6 rounded-lg shadow-md">
-							<div className="text-white mb-4">Simulation</div>
-							<p className="text-gray-200">
-								Logiicdev excels in cell-level, package, co-simulation, signal
-								and power integrity, and analog/mixed-signal block verification.
-							</p>
-						</div>
-					</div>
+  return (
+    <section className="bg-gradient-to-br from-slate-900 to-slate-950 text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24">
+      <div className="container mx-auto text-center">
 
-					{/* Card 2 */}
-					<div className="p-4">
-						<div className="bg-purple-600 p-6 rounded-lg shadow-md">
-							<div className="text-white mb-4">AI Battery Management</div>
-							<p className="text-gray-200">
-								Our AI Battery HIL provides a real-time virtual environment to
-								test control algorithms without physical prototypes.
-							</p>
-						</div>
-					</div>
+        {/* Section Heading */}
+        <motion.div
+          className="flex flex-col lg:flex-row justify-between items-start mb-10"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} // Animation triggers only once when in view
+          transition={{ duration: 0.7 }}
+        >
+          {/* Left Side: Heading */}
+          <div className="lg:max-w-xl text-left">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-poppins tracking-wide mb-4">
+              Here's how we can help you: Advantages.
+            </h2>
+          </div>
 
-					{/* Card 3 */}
-					<div className="p-4">
-						<div className="bg-purple-600 p-6 rounded-lg shadow-md">
-							<div className="text-white mb-4">
-								Project Coordination & Consultancy
-							</div>
-							<p className="text-gray-200">
-								Leveraging deep semiconductor expertise, we help clients
-								accelerate business goals by transforming technical knowledge
-								into practical solutions.
-							</p>
-						</div>
-					</div>
+          {/* Right Side: Button and Description */}
+          <div className="flex flex-col items-start space-y-4 mt-6 lg:mt-0 lg:ml-4">
+            <motion.p
+              className="text-gray-300 text-base sm:text-lg text-left max-w-xs lg:max-w-sm"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }} // Animation triggers only once when in view
+              transition={{ duration: 1.0, delay: 0.5 }}
+            >
+              The Benefits of Partnering with Us: Our Competitive Edge and Your Success
+            </motion.p>
 
-					{/* Card 4 */}
-					<div className="p-4">
-						<div className="bg-purple-600 p-6 rounded-lg shadow-md">
-							<div className="text-white mb-4">Hi-Speed Power Electronics</div>
-							<p className="text-gray-200">
-								Our GaN FETs enable faster switching and reduced losses for
-								applications in battery management, fast switching, and load
-								handling.
-							</p>
-						</div>
-					</div>
+            <motion.button
+              className="bg-white text-purple-600 px-6 py-3 text-sm sm:text-base rounded-full font-semibold hover:bg-purple-600 hover:text-white"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get Started
+            </motion.button>
+          </div>
+        </motion.div>
 
-					{/* Card 5 */}
-					<div className="p-4">
-						<div className="bg-purple-600 p-6 rounded-lg shadow-md">
-							<div className="text-white mb-4">FPGA & IP</div>
-							<p className="text-gray-200">
-								Logiicdev offers custom FPGA solutions as cost-effective,
-								efficient alternatives to ASICs, minimizing hidden expenses and
-								production delays.
-							</p>
-						</div>
-					</div>
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 px-4 md:px-8 lg:px-0">
+          {cards.map((card, index) => (
+            <motion.div
+              key={index}
+              className="bg-violet-600 text-white p-6 rounded-lg shadow-md h-auto"
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }} // Trigger animation when card comes into view
+              variants={cardVariants}
+            >
+              <div className="flex flex-col items-start">
+                {/* Icon */}
+                <div className="text-white bg-transparent p-2 rounded-md">
+                  {card.icon}
+                </div>
 
-					{/* Card 6 */}
-					<div className="p-4">
-						<div className="bg-purple-600 p-6 rounded-lg shadow-md">
-							<div className="text-white mb-4">Verification & Validation</div>
-							<p className="text-gray-200">
-								We ensure optimal hardware performance with advanced testing
-								strategies for mixed signals, high-speed tech, and power modes,
-								preventing costly redesigns.
-							</p>
-						</div>
-					</div>
-				</Slider>
-			</div>
-		</section>
-	)
-}
+                {/* Card Title */}
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">
+                  {card.title}
+                </h3>
 
-export default Advantages
+                {/* Card Description */}
+                <p className="text-sm sm:text-base text-start">
+                  {card.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Advantages;

@@ -20,6 +20,9 @@ export default {
 			// backgroundSize: {
 			// 	"200%": "200%",
 			// },
+			fontFamily:{
+				poppins: ["Poppins", "sans-serif"]
+			}
 		},
 	},
 	plugins: [],
