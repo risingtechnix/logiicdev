@@ -1,6 +1,6 @@
-import React from "react";
-import {ArrowRightIcon} from "@heroicons/react/24/solid";
-import {motion} from "framer-motion";
+import React from "react"
+import {ArrowRightIcon} from "@heroicons/react/24/solid"
+import {motion} from "framer-motion"
 
 const HeroSection = () => {
 	// Animation Variants
@@ -23,7 +23,7 @@ const HeroSection = () => {
 		<motion.section
 			initial="hidden"
 			animate="visible"
-			className="bg-slate-950 dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-lg flex flex-col lg:flex-row items-center justify-between  sm:m-10"
+			className="bg-black dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-lg flex flex-col lg:flex-row items-center justify-between  sm:m-10"
 		>
 			{/* Left side - Text content */}
 			<motion.div
