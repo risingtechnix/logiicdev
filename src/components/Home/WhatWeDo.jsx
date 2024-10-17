@@ -99,7 +99,7 @@ const WhatWeDo = () => {
 			initial="hidden"
 			animate={isInView ? "visible" : "hidden"}
 			variants={sectionVariants}
-			className="flex flex-col items-center justify-center py-10 sm:py-14 lg:py-16 px-4 bg-gradient-to-r from-blue-100 via-white to-purple-100 animate-gradient-x"
+			className="flex flex-col items-center justify-center py-10 sm:py-14 lg:py-16 px-4 bg-gradient-to-r from-blue-100 via-white to-purple-100 dark:from-[#221634] dark:via-[#111827] dark:to-[#17124d]  animate-gradient-x"
 		>
 			{/* Wrapping the section in motion.div for fade-in effect */}
 			<motion.div
@@ -119,7 +119,7 @@ const WhatWeDo = () => {
 
 				{/* Main Heading */}
 				<motion.h1
-					className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+					className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4"
 					variants={headingVariants}
 				>
 					Finding a new way!
@@ -127,7 +127,7 @@ const WhatWeDo = () => {
 
 				{/* Subheading */}
 				<motion.h2
-					className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-600"
+					className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-600 dark:text-[#855BFF]"
 					variants={subheadingVariants}
 				>
 					What We Do?
