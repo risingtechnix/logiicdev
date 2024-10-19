@@ -67,6 +67,7 @@
 
 import React, {useRef} from "react"
 import {motion, useInView} from "framer-motion"
+import ProjectPlanning from "./ProjectPlanning"
 
 const WhatWeDo = () => {
 	// Reference to track when the component is in view
@@ -133,6 +134,7 @@ const WhatWeDo = () => {
 					What We Do?
 				</motion.h2>
 			</motion.div>
+			<ProjectPlanning />
 		</motion.section>
 	)
 }
