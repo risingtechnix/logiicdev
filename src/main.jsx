@@ -10,6 +10,9 @@ import Company from "./pages/Company.jsx"
 import Research from "./pages/Research.jsx"
 import Contact from "./pages/Contact.jsx"
 import Home from "./pages/Home.jsx"
+import Product1 from "./components/Products/Product1.jsx"
+import Product2 from "./components/Products/Product2.jsx"
+import Product3 from "./components/Products/Product3.jsx"
 
 const router = createBrowserRouter([
 	{
@@ -40,6 +43,18 @@ const router = createBrowserRouter([
 			{
 				path: "/contact",
 				element: <Contact />,
+			},
+			{
+				path: "/product1",
+				element: <Product1 />,
+			},
+			{
+				path: "/product2",
+				element: <Product2 />,
+			},
+			{
+				path: "/product3",
+				element: <Product3 />,
 			},
 		],
 	},
