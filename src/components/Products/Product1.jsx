@@ -7,6 +7,8 @@ import CheckIcon from "../../assets/Check icon.png";
 import TranToTech from "../../assets/TransitionToTech.png";
 import OmniChart from "../../assets/OmniPowerChart.png";
 import WhyOmniPower from "../../assets/WhyOmniPower.png";
+import OmniPowerDiagram from "../../assets/OmnipowerDiagram.png";
+
 
 function Product1() {
   const refe = useRef(null);
@@ -126,40 +128,61 @@ function Product1() {
         </motion.div>
       </motion.div>
 
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b p-6">
-        <motion.div
-          className=" rounded-2xl p-6 shadow-lg max-w-lg md:max-w-xl mx-auto mb-8"
-          ref={refe}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={imageVariants}
-        >
-          {/* Main Product Image */}
-          <img
-            src={OmniPowerProduct} // Add the correct image path here
-            alt="OmniPower Device"
-            className="mx-auto"
-          />
-        </motion.div>
+      <section className="container mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-2 items-center gap-8">
+          {/* Text Content */}
+          <motion.div
+            ref={refe}
+            className="space-y-6 pl-4 ml-6"
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={textVariants}
+          >
+            <span className="bg-purple-100 text-purple-700 text-sm font-medium px-3 py-1 rounded-full">
+              Omnipower
+            </span>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+              Omnipower: The Patented AI-Powered Motherboard for Advanced Energy
+              Applications
+            </h2>
+            <p className="text-gray-600 text-lg dark:text-gray-300 ">
+              Omnipower is a patented motherboard engineered exclusively for
+              power applications in generation, transmission, storage, and
+              energy consumption. Designed with AI capabilities, it serves as a
+              specialized testing solution for batteries and power regulators.
+              Similar to a computer motherboard in versatility, Omnipower
+              enables bi-directional (zero-loss) operation, full digitization,
+              and seamless integration of AI/ML technologies for testing,
+              monitoring, grading, and predictive analysis. With features like
+              real-time monitoring of critical battery parameters and digital
+              twin technology, OP enhances battery performance, sustainability,
+              and efficiency.
+            </p>
+            <p className="text-gray-600 text-lg dark:text-gray-300">
+              Whether you're developing ICs or systems, the broad portfolio of
+              our offerings enables you to select the model that fits your
+              needs.
+            </p>
+          </motion.div>
 
-        {/* Text Section */}
-        <motion.div
-          className="text-center"
-          ref={refe}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={textVariants}
-        >
-          <h2 className="text-2xl md:text-5xl font-bold md:leading-snug text-gray-800 mb-4 dark:text-white">
-            Streamline project management <br /> with the simplest tool
-            available
-          </h2>
-          <p className="text-gray-600 md:text-xl dark:text-gray-400">
-            Why a straightforward project management tool is the best choice for
-            your team
-          </p>
-        </motion.div>
-      </div>
+          {/* Image */}
+          <motion.div
+            className="relative"
+            ref={refe}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            variants={imageVariants}
+          >
+            <img
+              src={OmniPowerProduct} // Replace with your actual image path
+              alt="Team at work"
+              className="w-3/4 h-auto mx-auto rounded-lg shadow-lg"
+            />
+            {/* Adjusted decorative element */}
+            <div className="absolute -bottom-8 -right-[-100px] -z-10 bg-yellow-400 rounded-full w-20 h-20"></div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Card Components */}
 
@@ -222,7 +245,23 @@ function Product1() {
         </div>
       </motion.div>
 
+      {/* OmniPower Diagram */}
       <motion.div
+        className="flex flex-col items-center justify-evenly min-h-80 md:min-h-96  md:py-20 sm:p-10 rounded-lg"
+        ref={refe3}
+        initial="hidden"
+        animate={isInView3 ? "visible" : "hidden"}
+        variants={imageVariants}
+      >
+        <img
+          src={OmniPowerDiagram}
+          alt=""
+          className="shadow-lg rounded-lg bg-white"
+        />
+      </motion.div>
+
+      {/* Images */}
+      {/* <motion.div
         className=" mt-8 rounded-2xl p-6 shadow-lg max-w-lg md:max-w-4xl mx-auto mb-8"
         ref={refe3}
         initial="hidden"
@@ -230,26 +269,74 @@ function Product1() {
         variants={imageVariants}
       >
         {/* Main Product Image */}
-        <img
+      {/* <img
           src={TranToTech} // Add the correct image path here
           alt="Transition to Technology"
           className="mx-auto rounded-lg"
         />
-      </motion.div>
-      <motion.div
-        className=" mt-20 rounded-2xl p-6 shadow-lg max-w-lg md:max-w-4xl mx-auto mb-8"
+      </motion.div> */}
+      {/* <motion.div
+        className=" mt-20 rounded-2xl p-6 mx-auto shadow-lg max-w-lg md:max-w-4xl mb-8"
         ref={refe4}
         initial="hidden"
         animate={isInView4 ? "visible" : "hidden"}
         variants={imageVariants}
       >
         {/* Main Product Image */}
-        <img
+      {/* <img
           src={OmniChart} // Add the correct image path here
           alt="Transition to Technology"
           className="mx-auto rounded-lg"
         />
-      </motion.div>
+      </motion.div>  */}
+
+      {/* Social Impact of Omnipower */}
+      <section className="flex flex-col lg:flex-row items-center justify-between p-8 sm:p-16 sm:m-10 lg:gap-24">
+        {/* Left Side - Image */}
+        <motion.div
+          className="flex justify-center lg:justify-start mb-8 lg:mb-0"
+          ref={refe4}
+          initial="hidden"
+          animate={isInView4 ? "visible" : "hidden"}
+          variants={imageVariants}
+        >
+          <img
+            src="src/assets/PositiveImpactOmniPower.png" // Replace with your image path
+            alt="Project Planning"
+            className="w-64 sm:w-96 lg:w-[25rem] xl:w-[45rem] h-auto object-cover rounded-lg bg-white shadow-lg"
+          />
+        </motion.div>
+
+        {/* Right Side - Text Content */}
+        <motion.div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-left lg:pl-16" ref={refe4}
+        initial="hidden"
+        animate={isInView4 ? "visible" : "hidden"}
+        variants={textVariants}>
+          {/* Tag */}
+          <span className="bg-purple-100 text-purple-600 font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4 lg:text-base">
+            Social Impact
+          </span>
+
+          {/* Main Heading */}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-900 dark:text-white">
+            Omnipower Vision
+          </h1>
+
+          {/* Subheading */}
+          <p className="text-gray-700 text-sm sm:text-base lg:text-xl mb-6 dark:text-gray-200">
+            To reshape the future of battery testing and mobility through
+            cutting-edge AI and promote long-term sustainability for circular
+            value chain.
+          </p>
+
+          {/* BatteryValue image */}
+          <img
+            src="src/assets/BatteryValue.png"
+            alt=""
+            className="rounded-lg xl:w-auto 2xl:h-[230px]"
+          />
+        </motion.div>
+      </section>
 
       {/* Why OmniPower */}
 
@@ -264,7 +351,6 @@ function Product1() {
           Why OmniPower ? <br /> The Future Standard in Battery Testing
         </h2>
       </motion.div>
-
       <motion.section
         className="flex flex-col lg:flex-row items-center justify-between p-8 sm:p-16 sm:m-10"
         ref={refe5}
@@ -290,15 +376,15 @@ function Product1() {
           variants={textVariants}
         >
           {/* Text */}
-          <p className="text-gray-700 font-medium leading-relaxed text-sm sm:text-base lg:text-lg mb-6 dark:text-gray-200">
-            --- Leading companies like Tesla, Samsung, LG Chemistry, and CATL
-            are making significant investments in testing infrastructure and
+          <p className="text-gray-700 text-sm sm:text-base lg:text-lg mb-6 leading-loose dark:text-gray-200">
+            Leading companies like Tesla, Samsung, LG Chemistry, and CATL are
+            making significant investments in testing infrastructure and
             manufacturing facilities, including Gigafactories, at comparable
             rates. Despite the projected 60% reduction in battery sales prices
             from $200 per kWh in 2020 to $75 per kWh by 2030, testing costs are
             expected to remain consistent. This underscores the pivotal role of
             test equipment in the battery industry’s success, positioning it as
-            a decisive factor over manufacturing operations. ---
+            a decisive factor over manufacturing operations.
           </p>
         </motion.div>
       </motion.section>

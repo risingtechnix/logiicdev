@@ -73,14 +73,14 @@ const Navbar = () => {
 
             {/* Dropdown menu for products (Desktop) */}
             {isProductDropdownOpen && (
-              <div className="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg">
+              <div className="absolute left-0 mt-4 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
                 <ul>
                   <li>
                     <Link
                       to="/product1"
                       className="block px-4 py-2 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
                     >
-                      Product 1
+                      Omnipower-Unleash Your Power lab Potential
                     </Link>
                   </li>
                   <li>
