@@ -1,6 +1,8 @@
 import React from "react"
 import {ArrowRightIcon} from "@heroicons/react/24/solid"
 import {motion} from "framer-motion"
+import Button from "./Button"
+import Button2 from "./Button2"
 
 const HeroSection = () => {
 	// Animation Variants
@@ -45,22 +47,27 @@ const HeroSection = () => {
 				</p>
 				<div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
 					{/* Get Started Button */}
-					<motion.button
+					{/* <motion.button
 						whileHover={buttonHover}
 						whileTap={{scale: 0.9}}
 						className="bg-violet-700 dark:bg-[#007aff] dark:text-white text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover: transition duration-100 w-full sm:w-auto"
 					>
 						Get started
 						<ArrowRightIcon className="h-5 w-5 ml-2" />
-					</motion.button>
+					</motion.button> */}
+					<Button
+						title={"Get Started"}
+						dark={"dark:bg-[#007aff] dark:text-white"}
+					/>
 					{/* Learn More Button */}
-					<motion.button
+					{/* <motion.button
 						whileHover={buttonHover}
 						whileTap={{scale: 0.9}}
 						className="border border-white dark:border-[#007aff] dark:text-[#007aff] px-6 py-3 rounded-lg font-semibold text-white hover:bg-white hover:text-black transition duration-100 w-full sm:w-auto"
 					>
 						Learn More
-					</motion.button>
+					</motion.button> */}
+					<Button2 title={"Learn More"} />
 				</div>
 			</motion.div>
 
