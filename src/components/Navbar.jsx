@@ -114,21 +114,38 @@ const Navbar = () => {
             {isSolutionDropdownOpen && (
               <div className="absolute left-0 mt-0 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
                 <ul>
-                  {[
-                    "IoT",
-                    "Energy Efficiency and Management",
-                    "Mobility",
-                    "Drones",
-                  ].map((item, index) => (
-                    <li key={index}>
-                      <Link
-                        to={`/${item.toLowerCase().replace(/ /g, "")}`}
-                        className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
+                <li>
+                    <Link
+                      to="/iot"
+                      className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                    >
+                      Iot
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/energyEfficiency"
+                      className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                    >
+                      Energy Efficiency and Management
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/mobility"
+                      className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                    >
+                      Mobility
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/drones"
+                      className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+                    >
+                      Drones
+                    </Link>
+                  </li>
                 </ul>
               </div>
             )}
