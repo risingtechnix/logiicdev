@@ -13,6 +13,10 @@ import Home from "./pages/Home.jsx"
 import Product1 from "./components/Products/Product1.jsx"
 import Product2 from "./components/Products/Product2.jsx"
 import Product3 from "./components/Products/Product3.jsx"
+import Iot from "./components/Solution/Iot.jsx"
+import EnergyEfficiency from "./components/Solution/EnergyEfficiency.jsx"
+import Mobility from "./components/Solution/Mobility.jsx"
+import Drones from "./components/Solution/Drones.jsx"
 
 const router = createBrowserRouter([
 	{
@@ -55,6 +59,22 @@ const router = createBrowserRouter([
 			{
 				path: "/product3",
 				element: <Product3 />,
+			},
+			{
+				path: "/iot",
+				element: <Iot />,
+			},
+			{
+				path: "/energyEfficiency",
+				element: <EnergyEfficiency />,
+			},
+			{
+				path: "/mobility",
+				element: <Mobility />,
+			},
+			{
+				path: "/drones",
+				element: <Drones />,
 			},
 		],
 	},
