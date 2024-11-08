@@ -29,7 +29,7 @@ const ProjectSection = () => {
 					}}
 					className="space-y-6 pl-4 ml-6"
 				>
-					<span className="bg-[#59cf75] text-white text-sm font-medium px-3 py-1 rounded-full">
+					<span className="bg-[#59cf75] text-white dark:bg-[#F0F8EE] dark:text-[#1D6362] text-sm font-medium px-3 py-1 rounded-full">
 						Project Planning
 					</span>
 					<h2 className="text-4xl font-bold dark:text-white">
@@ -46,7 +46,7 @@ const ProjectSection = () => {
 						Whether you're developing ICs or systems, the broad portfolio of our
 						offerings enables you to select the model that fits your needs.
 					</p>
-					<button className="flex items-center space-x-2 bg-[#02b153] hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white font-medium py-2 px-6 rounded-lg">
+					<button className="flex items-center space-x-2 bg-[#02b153] hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
 						<span>Start a Project</span>
 						<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
 							<svg

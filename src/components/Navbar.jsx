@@ -7,11 +7,13 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
 	const [theme, setTheme] = useState(localStorage.getItem("theme") || "light")
 	const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false)
+	const [isProduct2DropdownOpen, setIsProduct2DropdownOpen] = useState(false)
 	const [isCompanyDropdownOpen, setIsCompanyDropdownOpen] = useState(false)
 	const [isSolutionDropdownOpen, setIsSolutionDropdownOpen] = useState(false)
 	const [isResearchDropdownOpen, setIsResearchDropdownOpen] = useState(false)
 
 	const [isMobileProductOpen, setIsMobileProductOpen] = useState(false)
+	const [isMobileProduct2Open, setIsMobileProduct2Open] = useState(false)
 	const [isMobileCompanyOpen, setIsMobileCompanyOpen] = useState(false)
 	const [isMobileSolutionOpen, setIsMobileSolutionOpen] = useState(false)
 	const [isMobileResearchOpen, setIsMobileResearchOpen] = useState(false)
@@ -84,6 +86,16 @@ const Navbar = () => {
 			setIsResearchDropdownOpen(false)
 		}, 100) // Adjust the delay time (in milliseconds) as needed
 	}
+	const handleProduct2MouseEnter = () => {
+		clearTimeout(closeResearchTimeout)
+		setIsProduct2DropdownOpen(true)
+	}
+
+	const handleProduct2MouseLeave = () => {
+		closeResearchTimeout = setTimeout(() => {
+			setIsProduct2DropdownOpen(false)
+		}, 100) // Adjust the delay time (in milliseconds) as needed
+	}
 	return (
 		<nav className="bg-[#FAF9F5] dark:bg-gray-900 px-4 sm:px-6 lg:px-8">
 			<div className="flex justify-between h-16">
@@ -93,7 +105,7 @@ const Navbar = () => {
 						src="src/assets/logo.png"
 						alt="Logo"
 					/>
-					<span className="ml-2 font-bold text-2xl text-[#02b153] dark:text-white">
+					<span className="ml-2 font-bold text-3xl text-[#02b153] dark:text-white">
 						Logiicdev
 					</span>
 				</Link>
@@ -152,7 +164,10 @@ const Navbar = () => {
 						onMouseLeave={handleSolutionMouseLeave}
 					>
 						<motion.div variants={linkVariants} whileHover="hover">
-							<Link className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" to="/iot">
+							<Link
+								className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+								to="/iot"
+							>
 								Solution
 							</Link>
 						</motion.div>
@@ -203,14 +218,17 @@ const Navbar = () => {
 						onMouseLeave={handleResearchMouseLeave}
 					>
 						<motion.div variants={linkVariants} whileHover="hover">
-							<Link className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" to="/fpgaAndAi">
+							<Link
+								className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+								to="/fpgaAndAi"
+							>
 								Research
 							</Link>
 						</motion.div>
 						{isResearchDropdownOpen && (
 							<div className="absolute left-0 mt-6 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
 								<ul>
-								<li>
+									<li>
 										<Link
 											to="/fpgaAndAi"
 											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
@@ -218,7 +236,7 @@ const Navbar = () => {
 											FPGA and AI
 										</Link>
 									</li>
-								<li>
+									<li>
 										<Link
 											to="/testing"
 											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
@@ -239,7 +257,10 @@ const Navbar = () => {
 						onMouseLeave={handleProductMouseLeave}
 					>
 						<motion.div variants={linkVariants} whileHover="hover">
-							<Link className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" to="/product1">
+							<Link
+								className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+								to="/product1"
+							>
 								Product
 							</Link>
 						</motion.div>
@@ -251,25 +272,51 @@ const Navbar = () => {
 											to="/product1"
 											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
 										>
-											Omnipower-Unleash Your Power lab Potential
+											Omnipower
 										</Link>
 									</li>
-									<li>
+									<li
+										className="relative"
+										onMouseEnter={handleProduct2MouseEnter}
+										onMouseLeave={handleProduct2MouseLeave}
+									>
 										<Link
 											to="/product2"
 											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
 										>
-											Product 2
+											Cost-Optimized SoC
 										</Link>
+										{isProduct2DropdownOpen && (
+											<div className="absolute -right-10 mt-2 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
+												<ul>
+													<li>
+														<Link
+															to="/product1"
+															className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+														>
+															KIANA
+														</Link>
+													</li>
+													<li>
+														<Link
+															to="/product3"
+															className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+														>
+															KIANA
+														</Link>
+													</li>
+												</ul>
+											</div>
+										)}
 									</li>
-									<li>
+									{/* <li>
 										<Link
 											to="/product3"
 											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
 										>
 											Product 3
 										</Link>
-									</li>
+									</li> */}
 								</ul>
 							</div>
 						)}
@@ -450,14 +497,31 @@ const Navbar = () => {
 								to="/product1"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
-								Omnipower-Unleash Your Power lab Potential
+								Omnipower
 							</Link>
-							<Link
-								to="/product2"
+							<div
+								onClick={() => setIsMobileProduct2Open(!isMobileProduct2Open)}
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								Product 2
-							</Link>
+								{isMobileProduct2Open && (
+									<motion.div
+										className="pl-4 mt-2"
+										initial="closed"
+										animate={isOpen ? "open" : "closed"}
+										variants={menuVariants}
+									>
+										<Link
+											to="/product1"
+											className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+										>
+											Omnipower
+										</Link>
+
+										{/* TODO: Edit the mobile product view  */}
+									</motion.div>
+								)}
+							</div>
 							<Link
 								to="/product3"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"

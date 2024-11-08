@@ -75,7 +75,7 @@ const Advantages = () => {
 				>
 					{/* Left Side: Heading */}
 					<div className="lg:max-w-xl text-left">
-						<h2 className="text-3xl sm:text-4xl lg:text-5xl text-green-500 font-poppins tracking-wide mb-4">
+						<h2 className="text-3xl sm:text-4xl lg:text-5xl text-green-500 dark:text-[#48d4d2] font-poppins tracking-wide mb-4">
 							Here's how we can help you: Advantages.
 						</h2>
 					</div>
@@ -83,7 +83,7 @@ const Advantages = () => {
 					{/* Right Side: Button and Description */}
 					<div className="flex flex-col items-start space-y-4 mt-6 lg:mt-0 lg:ml-4">
 						<motion.p
-							className="text-green-900 text-base sm:text-lg text-left max-w-xs lg:max-w-sm"
+							className="text-green-900 dark:text-[#48d4d2] text-base sm:text-lg text-left max-w-xs lg:max-w-sm"
 							initial={{opacity: 0}}
 							whileInView={{opacity: 1}}
 							viewport={{once: true}} // Animation triggers only once when in view
@@ -93,7 +93,7 @@ const Advantages = () => {
 							Success
 						</motion.p>
 
-						<button className="flex items-center space-x-2 bg-green-500 hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white font-medium py-2 px-6 rounded-lg">
+						<button className="flex items-center space-x-2 bg-green-500 hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
 							<span>Get Started</span>
 						</button>
 					</div>
@@ -104,7 +104,7 @@ const Advantages = () => {
 					{cards.map((card, index) => (
 						<motion.div
 							key={index}
-							className="bg-white text-black p-6 rounded-lg shadow-md h-auto"
+							className="bg-white text-black p-6 rounded-lg shadow-md h-auto dark:bg-[#d4f0f0]"
 							custom={index}
 							initial="hidden"
 							whileInView="visible"
