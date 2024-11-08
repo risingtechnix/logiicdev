@@ -1,8 +1,6 @@
 import React from "react"
 import {ArrowRightIcon} from "@heroicons/react/24/solid"
 import {motion} from "framer-motion"
-import Button from "./Button"
-import Button2 from "./Button2"
 
 const HeroSection = () => {
 	// Animation Variants
@@ -25,49 +23,49 @@ const HeroSection = () => {
 		<motion.section
 			initial="hidden"
 			animate="visible"
-			className="bg-black dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-lg flex flex-col lg:flex-row items-center justify-between  sm:m-10"
+			className="bg-[#FAF9F5] dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-br-[800px] flex flex-col lg:flex-row items-center justify-between"
 		>
 			{/* Left side - Text content */}
 			<motion.div
 				variants={textVariants}
 				className="w-full lg:w-1/2 mb-8 lg:mb-0"
 			>
-				<span className="bg-violet-300 dark:bg-[#F0F8EE] dark:text-[#1D6362] text-purple-700 font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4">
+				<span className="bg-[#ffcc00] dark:bg-[#F0F8EE] dark:text-[#1D6362] text-white font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4">
 					Landing - Support Desk
 				</span>
-				<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight dark:text-[#1D1E25]">
+				<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-black dark:text-[#1D1E25]">
 					LOGIICDEV EXPLORE THE JOURNEY WITH CLIENT VISION TOWARDS A BETTER
 					WORLD
 				</h1>
-				<p className="text-gray-300 text-sm sm:text-base lg:text-lg mb-6 dark:text-[#7E8492]">
+				<p className="text-gray-700 text-sm sm:text-base lg:text-lg mb-6 dark:text-[#7E8492]">
 					We provide numerous solutions utilizing Power Electronics, Battery
 					Management, High-Precision Fast Switching (Patented), and Simulation.
 					Our solutions feature a unique combination of hardware, software, and
 					firmware, all backed by built-in intellectual property.
 				</p>
 				<div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-					{/* Get Started Button */}
-					{/* <motion.button
-						whileHover={buttonHover}
-						whileTap={{scale: 0.9}}
-						className="bg-violet-700 dark:bg-[#007aff] dark:text-white text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center hover: transition duration-100 w-full sm:w-auto"
-					>
-						Get started
-						<ArrowRightIcon className="h-5 w-5 ml-2" />
-					</motion.button> */}
-					<Button
-						title={"Get Started"}
-						dark={"dark:bg-[#007aff] dark:text-white"}
-					/>
-					{/* Learn More Button */}
-					{/* <motion.button
-						whileHover={buttonHover}
-						whileTap={{scale: 0.9}}
-						className="border border-white dark:border-[#007aff] dark:text-[#007aff] px-6 py-3 rounded-lg font-semibold text-white hover:bg-white hover:text-black transition duration-100 w-full sm:w-auto"
-					>
+					<button className="flex items-center space-x-2 bg-[#ffcc00] hover:bg-white hover:text-[#ffcc00] hover:border hover:border-[#ffcc00] text-white font-medium py-2 px-6 rounded-lg">
+						<span>Get Started</span>
+						<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								className="w-4 h-4"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth={2}
+									d="M9 5l7 7-7 7"
+								/>
+							</svg>
+						</span>
+					</button>
+					<button className="border border-[#ffcc00] text-[#ffcc00] font-medium py-2 px-6 rounded-lg hover:bg-gray-100">
 						Learn More
-					</motion.button> */}
-					<Button2 title={"Learn More"} />
+					</button>
 				</div>
 			</motion.div>
 

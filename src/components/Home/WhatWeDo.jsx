@@ -100,7 +100,8 @@ const WhatWeDo = () => {
 			initial="hidden"
 			animate={isInView ? "visible" : "hidden"}
 			variants={sectionVariants}
-			className="flex flex-col items-center justify-center py-10 sm:py-14 lg:py-16 px-4 bg-gradient-to-r from-blue-100 via-white to-purple-100 dark:from-[#221634] dark:via-[#111827] dark:to-[#17124d]  animate-gradient-x"
+			// from-blue-100 via-white to-purple-100
+			className="flex flex-col items-center justify-center py-10 sm:py-14 lg:py-16 px-4 bg-gradient-to-r  dark:from-[#221634] dark:via-[#111827] dark:to-[#17124d]  animate-gradient-x"
 		>
 			{/* Wrapping the section in motion.div for fade-in effect */}
 			<motion.div
@@ -110,13 +111,13 @@ const WhatWeDo = () => {
 				className="w-full flex flex-col items-center"
 			>
 				{/* Tagline - centered */}
-				<motion.div
-					className="bg-purple-100 text-purple-600 font-semibold text-sm py-2 px-4 rounded-full shadow-md mb-4 flex justify-center items-center"
+				{/* <motion.div
+					className="bg-[#27A744] text-white font-semibold text-sm py-2 px-4 rounded-full shadow-md mb-4 flex justify-center items-center"
 					variants={headingVariants}
 				>
 					A modern POS system
-					{/* <span className="ml-2">🌹</span> */}
-				</motion.div>
+					
+				</motion.div> */}
 
 				{/* Main Heading */}
 				<motion.h1
@@ -128,7 +129,7 @@ const WhatWeDo = () => {
 
 				{/* Subheading */}
 				<motion.h2
-					className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-600 dark:text-[#855BFF]"
+					className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-[#27A744] dark:text-[#855BFF]"
 					variants={subheadingVariants}
 				>
 					What We Do?

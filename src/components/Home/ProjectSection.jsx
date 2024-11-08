@@ -29,30 +29,42 @@ const ProjectSection = () => {
 					}}
 					className="space-y-6 pl-4 ml-6"
 				>
-					<span className="bg-purple-100 text-purple-700 text-sm font-medium px-3 py-1 rounded-full">
+					<span className="bg-[#59cf75] text-white text-sm font-medium px-3 py-1 rounded-full">
 						Project Planning
 					</span>
-					<h2 className="text-4xl font-bold text-gray-900">
+					<h2 className="text-4xl font-bold dark:text-white">
 						Everything that matters to your success
 					</h2>
-					<p className="text-gray-600">
+					<p className="text-gray-600 dark:text-gray-300">
 						Our goal is to create intelligent electronics for a connected world.
 						At logicdev, we design battery management systems, AI-powered
 						testing equipment, and FPGA solutions to meet the demands of green
 						energy, efficient design, and responsible innovation in the
 						industry.
 					</p>
-					<p className="text-gray-600">
+					<p className="text-gray-600 dark:text-gray-300">
 						Whether you're developing ICs or systems, the broad portfolio of our
 						offerings enables you to select the model that fits your needs.
 					</p>
-					<motion.button
-						whileHover={{scale: 1.05}}
-						whileTap={{scale: 0.95}}
-						className="mt-6 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
-					>
-						Start a Project &rarr;
-					</motion.button>
+					<button className="flex items-center space-x-2 bg-[#02b153] hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white font-medium py-2 px-6 rounded-lg">
+						<span>Start a Project</span>
+						<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								className="w-4 h-4"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth={2}
+									d="M9 5l7 7-7 7"
+								/>
+							</svg>
+						</span>
+					</button>
 				</motion.div>
 
 				{/* Image */}

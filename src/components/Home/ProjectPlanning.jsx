@@ -54,7 +54,7 @@ const ProjectPlanning = () => {
 			>
 				{/* Tag */}
 				<motion.span
-					className="bg-purple-100 text-purple-600 font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4"
+					className="bg-[#ffcc00] text-white font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4"
 					initial={{opacity: 0}}
 					animate={{opacity: isInView ? 1 : 0}}
 					transition={{delay: 0.5, duration: 0.6}}
@@ -84,13 +84,25 @@ const ProjectPlanning = () => {
 				</motion.p>
 
 				{/* Button */}
-				<motion.button
-					className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-100 flex items-center justify-center"
-					whileHover="hover"
-					variants={buttonHover}
-				>
-					Start a Project <span className="ml-2">→</span>
-				</motion.button>
+				<button className="flex items-center space-x-2 bg-[#ffcc00] hover:bg-white hover:text-[#ffcc00] hover:border hover:border-[#ffcc00] text-white font-medium py-2 px-6 rounded-lg">
+					<span>Start a Project</span>
+					<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							className="w-4 h-4"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M9 5l7 7-7 7"
+							/>
+						</svg>
+					</span>
+				</button>
 			</motion.div>
 		</motion.section>
 	)

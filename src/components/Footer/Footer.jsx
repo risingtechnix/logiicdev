@@ -22,7 +22,25 @@ const Footer = () => {
 						</h1>
 
 						<div className="flex justify-center space-x-4 mt-6">
-							<Button title={"Get Started"} />
+							<button className="flex items-center space-x-2 bg-[#ffcc00] hover:bg-[#1f2937] hover:border hover:border-[#ffcc00] text-black hover:text-white font-medium py-2 px-6 rounded-lg">
+								<span>Get Started</span>
+								<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+										className="w-4 h-4"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth={2}
+											d="M9 5l7 7-7 7"
+										/>
+									</svg>
+								</span>
+							</button>
 							<Button2 title={"Take a Tour"} />
 						</div>
 					</div>
