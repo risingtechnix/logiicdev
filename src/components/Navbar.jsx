@@ -152,9 +152,9 @@ const Navbar = () => {
 						onMouseLeave={handleSolutionMouseLeave}
 					>
 						<motion.div variants={linkVariants} whileHover="hover">
-							<p className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+							<Link className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" to="/iot">
 								Solution
-							</p>
+							</Link>
 						</motion.div>
 						{isSolutionDropdownOpen && (
 							<div className="absolute left-0 mt-6 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
@@ -203,23 +203,29 @@ const Navbar = () => {
 						onMouseLeave={handleResearchMouseLeave}
 					>
 						<motion.div variants={linkVariants} whileHover="hover">
-							<p className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+							<Link className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" to="/fpgaAndAi">
 								Research
-							</p>
+							</Link>
 						</motion.div>
 						{isResearchDropdownOpen && (
 							<div className="absolute left-0 mt-6 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
 								<ul>
-									{["FPGA and AI", "Testing"].map((item, index) => (
-										<li key={index}>
-											<Link
-												to={`/${item.toLowerCase().replace(/ /g, "")}`}
-												className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
-											>
-												{item}
-											</Link>
-										</li>
-									))}
+								<li>
+										<Link
+											to="/fpgaAndAi"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											FPGA and AI
+										</Link>
+									</li>
+								<li>
+										<Link
+											to="/testing"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											Simulation and Testing
+										</Link>
+									</li>
 								</ul>
 							</div>
 						)}
@@ -233,9 +239,9 @@ const Navbar = () => {
 						onMouseLeave={handleProductMouseLeave}
 					>
 						<motion.div variants={linkVariants} whileHover="hover">
-							<p className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+							<Link className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white" to="/product1">
 								Product
-							</p>
+							</Link>
 						</motion.div>
 						{isProductDropdownOpen && (
 							<div className="absolute left-0 mt-6 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">

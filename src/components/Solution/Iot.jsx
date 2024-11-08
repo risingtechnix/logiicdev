@@ -21,16 +21,15 @@ const Iot = () => {
         {/* Hero Section */}
         <div
           className="relative h-screen bg-cover bg-center bg-no-repeat"
-          style={{ backgroundColor: "Black" }}
         >
-          <div className="absolute inset-0 bg-black opacity-60"></div>{" "}
+          <div className="absolute inset-0 bg-black dark:bg-[#b4e7ff]"></div>{" "}
           {/* Dark overlay */}
           <div className="relative flex flex-col items-center justify-center h-full text-center text-white px-6 space-y-6">
             <motion.h1
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold dark:text-black"
             >
               The Power of IoT: Shaping the Future of Connectivity
             </motion.h1>
@@ -38,7 +37,7 @@ const Iot = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg md:text-xl max-w-3xl"
+              className="text-lg md:text-xl max-w-3xl dark:text-gray-800"
             >
               The Internet of Things (IoT) is transforming how devices interact,
               offering new levels of connectivity and control. Logiicdev is a
@@ -78,23 +77,23 @@ const Iot = () => {
           whileInView="visible"
           viewport={{ once: true }} // Trigger animation when card comes into view
           variants={cardVariants}
-          className="bg-white shadow-lg rounded-lg p-6"
+          className="bg-white shadow-lg rounded-lg p-6 dark:bg-gray-800"
         >
-          <h2 className="text-2xl font-semibold text-blue-600">
+          <h2 className="text-2xl font-semibold text-blue-600 dark:text-white">
             Comprehensive IoT Solutions
           </h2>
           <ul className="mt-4 space-y-2">
-            <li>
-              <strong>Custom Circuit Boards:</strong> Designed to meet specific
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Custom Circuit Boards:</strong> Designed to meet specific
               needs, ensuring optimal performance and reliability.
             </li>
-            <li>
-              <strong>Firmware and Software Development:</strong> Creating
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Firmware and Software Development:</strong> Creating
               robust firmware and software for effective communication and
               control.
             </li>
-            <li>
-              <strong>Connectivity:</strong> Equipping devices with Wi-Fi,
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Connectivity:</strong> Equipping devices with Wi-Fi,
               Bluetooth, and cellular networks for seamless system integration.
             </li>
           </ul>
@@ -106,22 +105,22 @@ const Iot = () => {
           whileInView="visible"
           viewport={{ once: true }} // Trigger animation when card comes into view
           variants={cardVariants}
-          className="bg-white shadow-lg rounded-lg p-6"
+          className="bg-white shadow-lg rounded-lg p-6 dark:bg-gray-800"
         >
-          <h2 className="text-2xl font-semibold text-blue-600">
+          <h2 className="text-2xl font-semibold text-blue-600 dark:text-white">
             Remote Monitoring and Control
           </h2>
           <ul className="mt-4 space-y-2">
-            <li>
-              <strong>AWS IoT Services:</strong> Utilizing AWS for scalable,
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">AWS IoT Services:</strong> Utilizing AWS for scalable,
               secure cloud-based IoT management.
             </li>
-            <li>
-              <strong>Cloud Integration:</strong> Enabling global remote
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Cloud Integration:</strong> Enabling global remote
               monitoring and management with real-time data access.
             </li>
-            <li>
-              <strong>Data Analytics:</strong> Processing and visualizing IoT
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Data Analytics:</strong> Processing and visualizing IoT
               data for actionable insights and optimization.
             </li>
           </ul>
@@ -133,22 +132,22 @@ const Iot = () => {
           whileInView="visible"
           viewport={{ once: true }} // Trigger animation when card comes into view
           variants={cardVariants}
-          className="bg-white shadow-lg rounded-lg p-6"
+          className="bg-white shadow-lg rounded-lg p-6 dark:bg-gray-800"
         >
-          <h2 className="text-2xl font-semibold text-blue-600">
+          <h2 className="text-2xl font-semibold text-blue-600 dark:text-white">
             Enhanced Security and Compliance
           </h2>
           <ul className="mt-4 space-y-2">
-            <li>
-              <strong>Secure Data Transmission:</strong> Ensuring encrypted
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Secure Data Transmission:</strong> Ensuring encrypted
               communication using AWS’s security features.
             </li>
-            <li>
-              <strong>Regulatory Compliance:</strong> Adhering to industry
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Regulatory Compliance:</strong> Adhering to industry
               standards for data privacy and security.
             </li>
-            <li>
-              <strong>Regular Updates:</strong> Providing updates to maintain
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Regular Updates:</strong> Providing updates to maintain
               system integrity against evolving threats.
             </li>
           </ul>
@@ -160,18 +159,18 @@ const Iot = () => {
           whileInView="visible"
           viewport={{ once: true }} // Trigger animation when card comes into view
           variants={cardVariants}
-          className="bg-white shadow-lg rounded-lg p-6"
+          className="bg-white shadow-lg rounded-lg p-6 dark:bg-gray-800"
         >
-          <h2 className="text-2xl font-semibold text-blue-600">
+          <h2 className="text-2xl font-semibold text-blue-600 dark:text-white">
             Scalable and Flexible Architecture
           </h2>
           <ul className="mt-4 space-y-2">
-            <li>
-              <strong>Scalability:</strong> AWS services allow Logiicdev to
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Scalability:</strong> AWS services allow Logiicdev to
               offer solutions that grow with business needs.
             </li>
-            <li>
-              <strong>Flexible Architecture:</strong> Systems can be easily
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Flexible Architecture:</strong> Systems can be easily
               adapted to different use cases, ensuring continued relevance.
             </li>
           </ul>
@@ -183,18 +182,18 @@ const Iot = () => {
           whileInView="visible"
           viewport={{ once: true }} // Trigger animation when card comes into view
           variants={cardVariants}
-          className="bg-white shadow-lg rounded-lg p-6"
+          className="bg-white shadow-lg rounded-lg p-6 dark:bg-gray-800"
         >
-          <h2 className="text-2xl font-semibold text-blue-600">
+          <h2 className="text-2xl font-semibold text-blue-600 dark:text-white">
             Advanced Testing and Simulation
           </h2>
           <ul className="mt-4 space-y-2">
-            <li>
-              <strong>PINTA AI Test Equipment:</strong> Rigorous testing for
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">PINTA AI Test Equipment:</strong> Rigorous testing for
               performance and efficiency.
             </li>
-            <li>
-              <strong>Simulation Tools:</strong> Modeling and optimizing IoT
+            <li className="dark:text-gray-400">
+              <strong className="dark:text-blue-400">Simulation Tools:</strong> Modeling and optimizing IoT
               systems before deployment to reduce risks.
             </li>
           </ul>
@@ -206,10 +205,10 @@ const Iot = () => {
           whileInView="visible"
           viewport={{ once: true }} // Trigger animation when card comes into view
           variants={cardVariants}
-          className="bg-white shadow-lg rounded-lg p-6"
+          className="bg-white shadow-lg rounded-lg p-6 dark:bg-gray-800"
         >
-          <h2 className="text-2xl font-semibold text-blue-600">Conclusion</h2>
-          <p className="mt-4">
+          <h2 className="text-2xl font-semibold text-blue-600 dark:text-white">Conclusion</h2>
+          <p className="mt-4 dark:text-gray-400">
             Logiicdev combines innovative design with cloud technologies to
             deliver robust IoT solutions. Leveraging AWS, they offer secure,
             scalable, and efficient IoT management, driving innovation and

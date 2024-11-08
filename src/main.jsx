@@ -17,6 +17,8 @@ import Iot from "./components/Solution/Iot.jsx"
 import EnergyEfficiency from "./components/Solution/EnergyEfficiency.jsx"
 import Mobility from "./components/Solution/Mobility.jsx"
 import Drones from "./components/Solution/Drones.jsx"
+import FpgaAndAi from "./components/Research/FpgaAndAi.jsx"
+import Testing from "./components/Research/Testing.jsx"	
 
 const router = createBrowserRouter([
 	{
@@ -75,6 +77,14 @@ const router = createBrowserRouter([
 			{
 				path: "/drones",
 				element: <Drones />,
+			},
+			{
+				path: "/fpgaAndAi",
+				element: <FpgaAndAi/>,
+			},
+			{
+				path: "/testing",
+				element: <Testing/>,
 			},
 		],
 	},
