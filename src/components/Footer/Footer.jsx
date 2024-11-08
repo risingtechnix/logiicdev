@@ -22,7 +22,7 @@ const Footer = () => {
 						</h1>
 
 						<div className="flex justify-center space-x-4 mt-6">
-							<button className="flex items-center space-x-2 bg-[#ffcc00] hover:bg-[#1f2937] hover:border hover:border-[#ffcc00] text-black hover:text-white font-medium py-2 px-6 rounded-lg">
+							<button className="flex items-center space-x-2 bg-[#ffcc00] hover:bg-[#1f2937] hover:border hover:border-[#ffcc00] text-black hover:text-white dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
 								<span>Get Started</span>
 								<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
 									<svg

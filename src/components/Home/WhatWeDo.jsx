@@ -101,7 +101,7 @@ const WhatWeDo = () => {
 			animate={isInView ? "visible" : "hidden"}
 			variants={sectionVariants}
 			// from-blue-100 via-white to-purple-100
-			className="flex flex-col items-center justify-center py-10 sm:py-14 lg:py-16 px-4 bg-gradient-to-r  dark:from-[#221634] dark:via-[#111827] dark:to-[#17124d]  animate-gradient-x"
+			className="flex flex-col items-center justify-center py-10 sm:py-14 lg:py-16 px-4 bg-gradient-to-r  dark:bg-[#111827]  animate-gradient-x"
 		>
 			{/* Wrapping the section in motion.div for fade-in effect */}
 			<motion.div
