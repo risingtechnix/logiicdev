@@ -25,7 +25,7 @@ const StatsSection = () => {
 	const controls = useAnimation()
 
 	return (
-		<section className="relative bg-purple-50 py-12">
+		<section className="relative py-12 bg-[#FEFFF2]">
 			{/* Content container */}
 			<div className="container mx-auto px-6">
 				{/* Heading and Subheading */}
@@ -41,21 +41,21 @@ const StatsSection = () => {
 				</div>
 
 				{/* Stats Box */}
-				<div className="bg-indigo-600 text-white rounded-lg p-6 sm:p-8 flex flex-col md:flex-row justify-around items-center mx-4 mt-8">
+				<div className="bg-[#F3FB6E] text-black rounded-lg p-6 sm:p-8 flex flex-col md:flex-row justify-around items-center mx-4 mt-8 ">
 					<div className="text-center mb-6 md:mb-0">
 						<h2 className="text-3xl sm:text-4xl font-bold flex justify-center">
 							<AnimatedCounter targetNumber={19} /> <span>+</span>
 						</h2>
 						<p className="text-sm sm:text-base mt-2">Projects completed</p>
 					</div>
-					<div className="hidden md:block border-l border-white h-12 mx-6"></div>
+					<div className="hidden md:block border-l border-black h-12 mx-6"></div>
 					<div className="text-center mb-6 md:mb-0">
 						<h2 className="text-3xl sm:text-4xl font-bold">
 							<AnimatedCounter targetNumber={10} />
 						</h2>
 						<p className="text-sm sm:text-base mt-2">Satisfied Clients</p>
 					</div>
-					<div className="hidden md:block border-l border-white h-12 mx-6"></div>
+					<div className="hidden md:block border-l border-black h-12 mx-6"></div>
 					<div className="text-center">
 						<h2 className="text-3xl sm:text-4xl font-bold">
 							<AnimatedCounter targetNumber={2} />
@@ -65,6 +65,13 @@ const StatsSection = () => {
 							<br />
 							Including in 2022 - ESA Space award
 						</p>
+					</div>
+					<div className="hidden md:block border-l border-black h-12 mx-6"></div>
+					<div className="text-center mb-6 md:mb-0">
+						<h2 className="text-3xl sm:text-4xl font-bold flex justify-center">
+							<AnimatedCounter targetNumber={190} /> <span>+</span>
+						</h2>
+						<p className="text-sm sm:text-base mt-2">Followers</p>
 					</div>
 				</div>
 			</div>

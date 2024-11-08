@@ -61,9 +61,9 @@ const Advantages = () => {
 			},
 		}),
 	}
-
+	// bg-gradient-to-br from-[#e0bf3f] to-[#89762e]
 	return (
-		<section className="bg-gradient-to-br from-slate-900 to-slate-950 text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24">
+		<section className="bg-[#a159ff0d] text-black py-12 px-4 sm:px-8 md:px-16 lg:px-24">
 			<div className="container mx-auto text-center">
 				{/* Section Heading */}
 				<motion.div
@@ -75,7 +75,7 @@ const Advantages = () => {
 				>
 					{/* Left Side: Heading */}
 					<div className="lg:max-w-xl text-left">
-						<h2 className="text-3xl sm:text-4xl lg:text-5xl font-poppins tracking-wide mb-4">
+						<h2 className="text-3xl sm:text-4xl lg:text-5xl text-green-500 font-poppins tracking-wide mb-4">
 							Here's how we can help you: Advantages.
 						</h2>
 					</div>
@@ -83,7 +83,7 @@ const Advantages = () => {
 					{/* Right Side: Button and Description */}
 					<div className="flex flex-col items-start space-y-4 mt-6 lg:mt-0 lg:ml-4">
 						<motion.p
-							className="text-gray-300 text-base sm:text-lg text-left max-w-xs lg:max-w-sm"
+							className="text-green-900 text-base sm:text-lg text-left max-w-xs lg:max-w-sm"
 							initial={{opacity: 0}}
 							whileInView={{opacity: 1}}
 							viewport={{once: true}} // Animation triggers only once when in view
@@ -93,13 +93,9 @@ const Advantages = () => {
 							Success
 						</motion.p>
 
-						<motion.button
-							className="bg-white text-purple-600 px-6 py-3 text-sm sm:text-base rounded-full font-semibold hover:bg-purple-600 hover:text-white"
-							whileHover={{scale: 1.05}}
-							whileTap={{scale: 0.95}}
-						>
-							Get Started
-						</motion.button>
+						<button className="flex items-center space-x-2 bg-green-500 hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white font-medium py-2 px-6 rounded-lg">
+							<span>Get Started</span>
+						</button>
 					</div>
 				</motion.div>
 
@@ -108,7 +104,7 @@ const Advantages = () => {
 					{cards.map((card, index) => (
 						<motion.div
 							key={index}
-							className="bg-violet-600 text-white p-6 rounded-lg shadow-md h-auto"
+							className="bg-white text-black p-6 rounded-lg shadow-md h-auto"
 							custom={index}
 							initial="hidden"
 							whileInView="visible"
@@ -117,7 +113,7 @@ const Advantages = () => {
 						>
 							<div className="flex flex-col items-start">
 								{/* Icon */}
-								<div className="text-white bg-transparent p-2 rounded-md">
+								<div className="text-black bg-transparent p-2 rounded-md">
 									{card.icon}
 								</div>
 
