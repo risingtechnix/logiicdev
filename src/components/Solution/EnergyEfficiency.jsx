@@ -14,16 +14,15 @@ const textVariants = {
       {/* Section 1: Header */}
       <div
         className="relative h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundColor: "Black" }}
       >
-        <div className="absolute inset-0 bg-black opacity-60"></div>{" "}
+        <div className="absolute inset-0 bg-black dark:bg-[#b4e7ff]"></div>{" "}
         {/* Dark overlay */}
         <div className="relative flex flex-col items-center justify-center h-full text-center text-white px-6 space-y-6">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold dark:text-black"
           >
             Harnessing the Power of AI, Cloud, and IoT for Energy Efficiency
           </motion.h1>
@@ -31,7 +30,7 @@ const textVariants = {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-xl max-w-3xl"
+            className="text-lg md:text-xl max-w-3xl dark:text-gray-800"
           >
             The rapid integration of AI, Cloud, and IoT technologies is
             transforming industries worldwide, bringing both innovation and
@@ -58,22 +57,22 @@ const textVariants = {
         variants={textVariants}
         className="space-y-6"
       >
-        <h2 className="text-2xl font-semibold text-blue-800">
+        <h2 className="text-2xl font-semibold text-blue-800 dark:text-white">
           Turning Challenges into Opportunities
         </h2>
-        <p className="text-gray-700 text-lg">
+        <p className="text-gray-700 text-lg dark:text-gray-400">
           At Logiicdev, we view the growing energy demands as an opportunity for
           agencies and consultants to enhance operations. The push for smarter,
           connected environments requires solutions that optimize energy use and
           reduce waste.
         </p>
         <ul className="space-y-4 pl-6 list-disc">
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Optimize Building and Plant Efficiency:</strong> Leverage
             advanced technologies to ensure facilities operate at peak
             efficiency, minimizing environmental impact.
           </li>
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Enhance Data Center Operations:</strong> Enable precise
             monitoring and management of energy usage in data centers, ensuring
             sustainability.
@@ -89,25 +88,25 @@ const textVariants = {
         variants={textVariants}
         className="space-y-6"
       >
-        <h2 className="text-2xl font-semibold text-blue-800">
+        <h2 className="text-2xl font-semibold text-blue-800 dark:text-white">
           Innovative Solutions for Efficiency
         </h2>
-        <p className="text-gray-700 text-lg">
+        <p className="text-gray-700 text-lg dark:text-gray-400">
           Logiicdev leads in developing tailored platforms and solutions for
           energy efficiency professionals, including:
         </p>
         <ul className="space-y-4 pl-6 list-disc">
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Custom Sites and Configurable Tests:</strong> Create
             personalized platforms to optimize energy efficiency based on
             specific client needs.
           </li>
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Advanced Data Capture:</strong> Integrate mobile apps and
             IoT devices for real-time data collection to identify
             inefficiencies.
           </li>
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Comprehensive Analysis:</strong> Provide in-depth tools for
             monitoring and analysis, ensuring accurate, actionable solutions.
           </li>
@@ -122,21 +121,21 @@ const textVariants = {
        variants={textVariants}
         className="space-y-6"
       >
-        <h2 className="text-2xl font-semibold text-blue-800">
+        <h2 className="text-2xl font-semibold text-blue-800 dark:text-white">
           Delivering Sustainable Results
         </h2>
-        <p className="text-gray-700 text-lg">
+        <p className="text-gray-700 text-lg dark:text-gray-400">
           Our commitment extends beyond tools; we deliver sustainable results
           that add long-term value. By implementing our solutions, businesses
           can achieve cost savings, operational efficiency, and a more
           sustainable future.
         </p>
         <ul className="space-y-4 pl-6 list-disc">
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Proactive Energy Management:</strong> Use insights from our
             analytics to optimize operations across multiple sites.
           </li>
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Scalable Solutions:</strong> Our platforms adapt to the
             growing demand for energy-efficient solutions, from single buildings
             to vast data centers.
@@ -153,19 +152,19 @@ const textVariants = {
         variants={textVariants}
         className="space-y-6"
       >
-        <h2 className="text-2xl font-semibold text-blue-800">
+        <h2 className="text-2xl font-semibold text-blue-800 dark:text-white">
         Your Partner in Energy Efficiency
         </h2>
-        <p className="text-gray-700 text-lg">
+        <p className="text-gray-700 text-lg dark:text-gray-400">
         Partner with Logiicdev for expert-driven solutions that meet the
           complexities of modern energy management, driving the future of energy
           efficiency for a sustainable tomorrow.
         </p>
         <ul className="space-y-4 pl-6 list-disc">
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Future-Focused Approach:</strong> Invest in sustainable practices that prepare your business for long-term efficiency and regulatory compliance.
           </li>
-          <li className="text-gray-700 text-lg">
+          <li className="text-gray-700 text-lg dark:text-gray-400">
             <strong>Collaborative Partnership:</strong> Work with us as a dedicated partner committed to achieving your energy efficiency goals.
           </li>
         </ul>
