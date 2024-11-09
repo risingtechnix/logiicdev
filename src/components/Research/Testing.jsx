@@ -45,7 +45,7 @@ function Testing() {
 
   return (
     <section className="bg-gray-100 dark:bg-slate-900">
-      <div className="grid md:grid-cols-2 gap-8 items-center mt-10">
+      <div className="grid md:grid-cols-2 gap-8 items-center">
         {/* Text Content */}
         <motion.div
           className="space-y-6 pl-4 ml-6 text-gray-800 dark:text-white"
