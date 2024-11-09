@@ -134,23 +134,54 @@ const Navbar = () => {
 						{isCompanyDropdownOpen && (
 							<div className="absolute left-0 mt-6 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
 								<ul>
-									{[
-										"Join us",
-										"About us",
-										"Legal",
-										"Impressum",
-										"Datenschutz",
-										"Equality plan",
-									].map((item, index) => (
-										<li key={index}>
-											<Link
-												to={`/${item.toLowerCase().replace(/ /g, "")}`}
-												className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
-											>
-												{item}
-											</Link>
-										</li>
-									))}
+									<li>
+										<Link
+											to="/iot"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											Careers
+										</Link>
+									</li>
+									<li>
+										<Link
+											to="/iot"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											About us
+										</Link>
+									</li>
+									<li>
+										<Link
+											to="/iot"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											Legal
+										</Link>
+									</li>
+									<li>
+										<Link
+											to="/iot"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											Impressum
+										</Link>
+									</li>
+									<li>
+										<Link
+											to="/iot"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											Datenschutz
+										</Link>
+									</li>
+									<li>
+										<Link
+											to="/iot"
+											className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+										>
+											Equality plan
+										</Link>
+									</li>
 								</ul>
 							</div>
 						)}
@@ -291,7 +322,7 @@ const Navbar = () => {
 												<ul>
 													<li>
 														<Link
-															to="/product1"
+															to="/product2"
 															className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
 														>
 															KIANA
@@ -302,7 +333,15 @@ const Navbar = () => {
 															to="/product3"
 															className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
 														>
-															KIANA
+															InAS
+														</Link>
+													</li>
+													<li>
+														<Link
+															to="/product3"
+															className="block px-4 py-2 text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg"
+														>
+															KARVi
 														</Link>
 													</li>
 												</ul>
@@ -403,22 +442,43 @@ const Navbar = () => {
 							animate={isOpen ? "open" : "closed"}
 							variants={menuVariants}
 						>
-							{[
-								"Join us",
-								"About us",
-								"Legal",
-								"Impressum",
-								"Datenschutz",
-								"Equality plan",
-							].map((item, index) => (
 								<Link
-									key={index}
-									to={`/${item.toLowerCase().replace(/ /g, "")}`}
+									to="/iot"
 									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 								>
-									{item}
+									Careers
 								</Link>
-							))}
+								<Link
+									to="/careers"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									About us
+								</Link>
+								<Link
+									to="/careers"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Legal
+								</Link>
+								<Link
+									to="/careers"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Impressum
+								</Link>
+								<Link
+									to="/careers"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Datenschutz
+								</Link>
+								<Link
+									to="/careers"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Equality plan
+								</Link>
+							
 						</motion.div>
 					)}
 				</div>
@@ -436,20 +496,32 @@ const Navbar = () => {
 							animate={isOpen ? "open" : "closed"}
 							variants={menuVariants}
 						>
-							{[
-								"IoT",
-								"Energy Efficiency and Management",
-								"Mobility",
-								"Drones",
-							].map((item, index) => (
+							
 								<Link
-									key={index}
-									to={`/${item.toLowerCase().replace(/ /g, "")}`}
+									to="/iot"
 									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 								>
-									{item}
+									Iot
 								</Link>
-							))}
+								<Link
+									to="/energyEfficiency"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Energy Efficiency and Management
+								</Link>
+								<Link
+									to="/mobility"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Mobility
+								</Link>
+								<Link
+									to="/drones"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Drones
+								</Link>
+							
 						</motion.div>
 					)}
 				</div>
@@ -467,15 +539,19 @@ const Navbar = () => {
 							animate={isOpen ? "open" : "closed"}
 							variants={menuVariants}
 						>
-							{["FPGA and AI", "Testing"].map((item, index) => (
+
 								<Link
-									key={index}
-									to={`/${item.toLowerCase().replace(/ /g, "")}`}
+									to="/fpgaAndAi"
 									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 								>
-									{item}
+									FPGA and AI
 								</Link>
-							))}
+								<Link
+									to="/testing"
+									className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+								>
+									Simulation and Testing
+								</Link>
 						</motion.div>
 					)}
 				</div>
@@ -500,10 +576,14 @@ const Navbar = () => {
 								Omnipower
 							</Link>
 							<div
-								onClick={() => setIsMobileProduct2Open(!isMobileProduct2Open)}
+								onClick={(e) =>{
+									e.stopPropagation();
+									setIsMobileProduct2Open(!isMobileProduct2Open);
+								} }
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
-								Product 2
+								Cost-Optimized SoC 
+							</div>
 								{isMobileProduct2Open && (
 									<motion.div
 										className="pl-4 mt-2"
@@ -512,22 +592,33 @@ const Navbar = () => {
 										variants={menuVariants}
 									>
 										<Link
-											to="/product1"
+											to="/product3"
 											className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 										>
-											Omnipower
+											KIANA
+										</Link>
+										<Link
+											to="/product3"
+											className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+										>
+											InAS
+										</Link>
+										<Link
+											to="/product3"
+											className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+										>
+											KARVi
 										</Link>
 
 										{/* TODO: Edit the mobile product view  */}
 									</motion.div>
 								)}
-							</div>
-							<Link
+							{/* <Link
 								to="/product3"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								Product 3
-							</Link>
+							</Link> */}
 						</motion.div>
 					)}
 				</div>
