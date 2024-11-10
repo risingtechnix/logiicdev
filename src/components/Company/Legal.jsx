@@ -4,7 +4,7 @@ import React from "react"
 const Legal = () => {
 	return (
 		<div>
-			<div className="bg-white dark:bg-[#111827]  py-10 px-6">
+			<div className="bg-[#fefff2] dark:bg-[#111827]  py-10 px-6">
 				<div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-gray-800">
 					{/* Trademarks Section */}
 					<div className="space-y-4">

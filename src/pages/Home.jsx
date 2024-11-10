@@ -6,6 +6,7 @@ import Advantages from "../components/Home/Advantages"
 import ProjectSection from "../components/Home/ProjectSection"
 import StatsSection from "../components/Home/StatsSection"
 import CallToAction from "../components/CallToAction"
+import LogoCarousel from "../components/LogoCarousel"
 
 const Home = () => {
 	return (
@@ -16,6 +17,7 @@ const Home = () => {
 			<Advantages />
 			<ProjectSection />
 			<StatsSection />
+			<LogoCarousel />
 			<CallToAction />
 		</>
 	)

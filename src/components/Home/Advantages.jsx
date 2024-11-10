@@ -92,10 +92,6 @@ const Advantages = () => {
 							The Benefits of Partnering with Us: Our Competitive Edge and Your
 							Success
 						</motion.p>
-
-						<button className="flex items-center space-x-2 bg-green-500 hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
-							<span>Get Started</span>
-						</button>
 					</div>
 				</motion.div>
 

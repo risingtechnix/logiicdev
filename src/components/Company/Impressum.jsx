@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.png"
 const Impressum = () => {
 	return (
 		<div>
-			<div className="flex flex-col md:flex-row items-center justify-center gap-8 space-y-8 md:space-y-0 md:space-x-12 p-6 bg-gray-50 dark:bg-[#111827]">
+			<div className="flex flex-col md:flex-row items-center justify-center gap-8 space-y-8 md:space-y-0 md:space-x-12 p-6 bg-[#fefff2] dark:bg-[#111827]">
 				{/* Left Column - Logo and Contact Details */}
 				<div className="flex flex-col items-center md:items-start text-center md:text-left space-y-2">
 					<img src={Logo} alt="logiicdev Logo" className="w-20 h-auto mb-2" />{" "}
