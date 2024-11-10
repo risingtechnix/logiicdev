@@ -4,8 +4,8 @@ const CallToAction = () => {
 	return (
 		<section className="relative flex flex-col items-center text-center py-16 bg-white dark:bg-[#d4f0f0]">
 			{/* Decorative Shapes */}
-			<div className="absolute left-12 top-1/2 transform -translate-y-1/2 w-14 h-16 bg-green-500 rounded-tl-full rounded-bl-full "></div>
-			<div className="absolute right-12 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-yellow-500 rotate-45"></div>
+			<div className="absolute hidden lg:block left-12 top-1/2 transform -translate-y-1/2 w-14 h-16 bg-green-500 rounded-tl-full rounded-bl-full"></div>
+			<div className="absolute hidden lg:block right-12 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-yellow-500 rotate-45"></div>
 
 			{/* Main Content */}
 			<h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight mb-4">

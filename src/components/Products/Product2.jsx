@@ -98,7 +98,7 @@ function Product2() {
 						<img
 							src={KianaCircuit} // Replace with your actual image path
 							alt="Team at work"
-							className="w-3/4 h-auto mx-auto rounded-lg shadow-lg"
+							className="w-3/6 h-auto mx-auto rounded-lg shadow-lg"
 						/>
 						{/* Adjusted decorative element */}
 					</motion.div>
@@ -129,7 +129,7 @@ function Product2() {
 					</motion.div>
 				</div>
 			</section>
-			<section className="flex flex-col md:flex-row items-center justify-center py-16 px-6 bg-[#fffff7] space-y-6 md:space-y-0 md:space-x-12">
+			<section className="flex flex-col md:flex-row items-center justify-center py-16 px-6 bg-[#fffff7] dark:bg-[#111827] space-y-6 md:space-y-0 md:space-x-12">
 				{/* Left Section - Logos */}
 				<motion.div
 					initial={{opacity: 0, x: -50}}
@@ -152,7 +152,7 @@ function Product2() {
 						visible: {opacity: 1, transition: {staggerChildren: 0.2}},
 						hidden: {opacity: 0},
 					}}
-					className="text-gray-800 text-center md:text-left"
+					className="text-gray-800 dark:text-white text-center md:text-left"
 				>
 					<motion.ul className="space-y-2 text-sm md:text-base">
 						{[
@@ -177,14 +177,14 @@ function Product2() {
 					</motion.ul>
 				</motion.div>
 			</section>
-			<section className="py-10 px-6 bg-white">
+			<section className="py-10 px-6 bg-white dark:bg-[#111827]">
 				<div className="max-w-4xl mx-auto">
 					{/* Animated Heading */}
 					<motion.h2
 						initial={{opacity: 0, y: 20}}
 						animate={{opacity: 1, y: 0}}
 						transition={{duration: 0.6, delay: 0.1}}
-						className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4"
+						className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4"
 					>
 						KiANA Advantages
 					</motion.h2>
@@ -202,7 +202,7 @@ function Product2() {
 							},
 							hidden: {opacity: 0},
 						}}
-						className="space-y-2 text-gray-800 text-sm md:text-base list-disc pl-5"
+						className="space-y-2 text-gray-800 dark:text-white text-sm md:text-base list-disc pl-5"
 					>
 						{[
 							"Combines Flexibility of SBC with the FPGA configurability",
