@@ -18,7 +18,14 @@ import EnergyEfficiency from "./components/Solution/EnergyEfficiency.jsx"
 import Mobility from "./components/Solution/Mobility.jsx"
 import Drones from "./components/Solution/Drones.jsx"
 import FpgaAndAi from "./components/Research/FpgaAndAi.jsx"
-import Testing from "./components/Research/Testing.jsx"	
+import Testing from "./components/Research/Testing.jsx"
+import Product4 from "./components/Products/Product4.jsx"
+import Careers from "./components/Company/Careers.jsx"
+import AboutUs from "./components/Company/AboutUs.jsx"
+import Legal from "./components/Company/Legal.jsx"
+import Impressum from "./components/Company/Impressum.jsx"
+import Datenschutz from "./components/Company/Datenschutz.jsx"
+import EquityPlan from "./components/Company/EquityPlan.jsx"
 
 const router = createBrowserRouter([
 	{
@@ -43,6 +50,30 @@ const router = createBrowserRouter([
 				element: <Company />,
 			},
 			{
+				path: "/careers",
+				element: <Careers />,
+			},
+			{
+				path: "/aboutus",
+				element: <AboutUs />,
+			},
+			{
+				path: "/legal",
+				element: <Legal />,
+			},
+			{
+				path: "/impressum",
+				element: <Impressum />,
+			},
+			{
+				path: "/datenschutz",
+				element: <Datenschutz />,
+			},
+			{
+				path: "/equityplan",
+				element: <EquityPlan />,
+			},
+			{
 				path: "/research",
 				element: <Research />,
 			},
@@ -63,6 +94,10 @@ const router = createBrowserRouter([
 				element: <Product3 />,
 			},
 			{
+				path: "/product4",
+				element: <Product4 />,
+			},
+			{
 				path: "/iot",
 				element: <Iot />,
 			},
@@ -80,11 +115,11 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/fpgaAndAi",
-				element: <FpgaAndAi/>,
+				element: <FpgaAndAi />,
 			},
 			{
 				path: "/testing",
-				element: <Testing/>,
+				element: <Testing />,
 			},
 		],
 	},

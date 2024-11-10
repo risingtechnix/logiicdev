@@ -137,7 +137,7 @@ function Product1() {
 						animate={isInView ? "visible" : "hidden"}
 						variants={textVariants}
 					>
-						<span className="bg-[#ffcc00] text-black text-sm font-medium px-3 py-1 rounded-full">
+						<span className="bg-[#ffcc00] text-black dark:bg-[#F0F8EE] dark:text-[#1D6362] text-sm font-medium px-3 py-1 rounded-full">
 							Omnipower
 						</span>
 						<h2 className="text-4xl font-bold text-gray-900 dark:text-white">
@@ -184,14 +184,14 @@ function Product1() {
 			</section>
 
 			{/* Card Components */}
-			<div className="bg-[#FEFFF2] py-12">
+			<div className="bg-[#FEFFF2] py-12 dark:bg-[#181c32]">
 				{/* Heading and Subheading */}
 				<div className="text-center space-y-4">
-					<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+					<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-[#48d4d2]">
 						Streamline project management <br className="hidden sm:block" />{" "}
 						with the simplest tool available
 					</h2>
-					<p className="text-gray-600 text-sm sm:text-base">
+					<p className="text-gray-600 text-sm sm:text-base dark:text-[#48d4d28c]">
 						Why a straightforward project management tool is the best choice for
 						your team
 					</p>
@@ -200,7 +200,7 @@ function Product1() {
 					{/* Output Characteristics */}
 					{Cards.map((card, index) => (
 						<motion.div
-							className="bg-white rounded-lg shadow-lg p-6 dark:bg-purple-950 dark:text-white"
+							className="bg-white rounded-lg shadow-lg p-6  dark:bg-[#D4F0F0] "
 							custom={index}
 							initial="hidden"
 							whileInView="visible"
@@ -244,7 +244,7 @@ function Product1() {
 					<div className="absolute top-1 left-0 right-0 h-2 bg-[#0c8ce9] mx-auto w-1/2"></div>
 
 					{/* Main text */}
-					<p className="text-2xl  leading-relaxed font-bold text-[#02b153] px-6 py-5 dark:text-blue-200">
+					<p className="text-2xl  leading-relaxed font-bold text-[#02b153] px-6 py-5 dark:text-[#D4F0F0]">
 						Liberating you from cumbersome lab equipment. Experience the freedom
 						to test your batteries effortlessly, all within the compact confines
 						of our desktop testing toolbox.
@@ -279,7 +279,7 @@ function Product1() {
 				{/* Main Product Image */}
 				<img
 					src={OmniChart} // Add the correct image path here
-					alt="Transition to Technology"
+					alt="Omnipower Chart"
 					className="mx-auto rounded-lg"
 				/>
 			</motion.div>
@@ -324,7 +324,7 @@ function Product1() {
 					variants={textVariants}
 				>
 					{/* Tag */}
-					<span className="bg-purple-100 text-purple-600 font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4 lg:text-base">
+					<span className="bg-purple-100 dark:bg-[#F0F8EE] dark:text-[#1D6362] text-purple-600 font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4 lg:text-base">
 						Social Impact
 					</span>
 
