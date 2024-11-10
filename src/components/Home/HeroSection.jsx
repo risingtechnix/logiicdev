@@ -3,6 +3,7 @@ import {ArrowRightIcon} from "@heroicons/react/24/solid"
 import {AnimatePresence, motion} from "framer-motion"
 import ContactPopup from "../Contact/ContactPopup"
 import {useState} from "react"
+import {Link} from "react-router-dom"
 
 const HeroSection = () => {
 	// Animation Variants
@@ -104,9 +105,11 @@ const HeroSection = () => {
 					<AnimatePresence>
 						{isPopupOpen && <ContactPopup onClose={handleClosePopup} />}
 					</AnimatePresence>
-					<button className="border border-[#ffcc00] text-[#000] dark:border-[#256867] dark:text-[#256867] dark:hover:bg-[#f0f8ee] font-medium py-2 px-6 rounded-lg hover:bg-gray-100">
-						Learn More
-					</button>
+					<Link to="/aboutus">
+						<button className="border border-[#ffcc00] text-[#000] dark:border-[#256867] dark:text-[#256867] dark:hover:bg-[#f0f8ee] font-medium py-2 px-6 rounded-lg hover:bg-gray-100">
+							Learn More
+						</button>
+					</Link>
 				</div>
 			</motion.div>
 

@@ -2,7 +2,7 @@ import React from "react"
 import {motion} from "framer-motion"
 const EquityPlan = () => {
 	return (
-		<div className="bg-[#d4f0f0] p-4 md:p-8 lg:p-12 w-full mx-auto text-gray-800">
+		<div className="bg-[#fefff2] dark:bg-[#d4f0f0] p-4 md:p-8 lg:p-12 w-full mx-auto text-gray-800">
 			<h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-6 md:mb-8">
 				Gender Equality Plan
 			</h1>
