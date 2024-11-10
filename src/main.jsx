@@ -26,6 +26,8 @@ import Legal from "./components/Company/Legal.jsx"
 import Impressum from "./components/Company/Impressum.jsx"
 import Datenschutz from "./components/Company/Datenschutz.jsx"
 import EquityPlan from "./components/Company/EquityPlan.jsx"
+import SearchJobs from "./components/Company/SearchJobs.jsx"
+import Opportunities from "./components/Company/Opportunities.jsx"
 
 const router = createBrowserRouter([
 	{
@@ -120,6 +122,14 @@ const router = createBrowserRouter([
 			{
 				path: "/testing",
 				element: <Testing />,
+			},
+			{
+				path: "/searchJobs",
+				element: <SearchJobs />,
+			},
+			{
+				path: "/opportunities",
+				element: <Opportunities />,
 			},
 		],
 	},
