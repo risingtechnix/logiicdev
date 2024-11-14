@@ -11,9 +11,9 @@ const Impressum = () => {
 					{/* Replace with your logo path */}
 					<h2 className="text-lg font-semibold text-green-600 ">logiicdev</h2>
 					<p className="dark:text-white">
-						Firma Logiicdev e.U.
+						Firma Logiicdev .GmbH
 						<br />
-						Krottendorfer Str. 72/1, 8052 Graz
+						Krottendorfer Str. 72/1, 8052 Graz, Austria
 					</p>
 					<p className="dark:text-white">
 						Mobile:{" "}
@@ -54,7 +54,7 @@ const Impressum = () => {
 						<em>Geschäftszweig:</em> IT Consultancy
 					</p>
 					<p>
-						<em>Sitz in politischer Gemeinde Graz</em>
+						<em>Sitz in politischer Gemeinde Graz, Austria</em>
 					</p>
 					<a
 						href="https://www.logiicdev.eu/wp-content/uploads/2023/02/Gender_equality_plan_logicdev.pdf"
@@ -82,8 +82,8 @@ const Impressum = () => {
 					{/* Register Court Section */}
 					<div>
 						<p className="font-semibold">Commercial register court:</p>
-						<p>Landesgericht für ZRS Graz, Gerichtsabteilung 25 Graz</p>
-						<p>Supervisory / trade authority: Magistrat ZRS Graz</p>
+						<p>Landesgericht für ZRS Graz, Gerichtsabteilung 25 Graz, Austria</p>
+						<p>Supervisory / trade authority: Magistrat ZRS Graz, Austria</p>
 					</div>
 
 					{/* EU Dispute Resolution Section */}

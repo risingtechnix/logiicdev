@@ -29,7 +29,7 @@ const ProjectPlanning = () => {
 			initial="hidden"
 			animate={isInView ? "visible" : "hidden"}
 			variants={sectionVariants}
-			className="flex flex-col lg:flex-row items-center justify-between p-8 sm:p-16 sm:m-10"
+			className="flex flex-col lg:flex-row items-center justify-between p-8 sm:p-16 sm:m-10 dark:bg-slate-900 bg-gray-50"
 		>
 			{/* Left Side - Image */}
 			<motion.div
@@ -54,7 +54,7 @@ const ProjectPlanning = () => {
 			>
 				{/* Tag */}
 				<motion.span
-					className="bg-[#ffcc00] text-white dark:bg-[#F0F8EE] dark:text-[#1D6362] font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4"
+					className="bg-[#ffcc00] text-black dark:bg-[#F0F8EE] dark:text-[#1D6362] font-semibold px-3 py-1 rounded-full text-xs sm:text-sm inline-block mb-4"
 					initial={{opacity: 0}}
 					animate={{opacity: isInView ? 1 : 0}}
 					transition={{delay: 0.5, duration: 0.6}}
@@ -84,9 +84,9 @@ const ProjectPlanning = () => {
 				</motion.p>
 
 				{/* Button */}
-				<button className="flex items-center space-x-2 bg-[#ffcc00] hover:bg-white hover:text-[#ffcc00] hover:border hover:border-[#ffcc00] text-white dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
+				{/* <button className="flex items-center space-x-2 bg-[#ffcc00] hover:bg-white hover:text-black hover:border hover:border-[#ffcc00] text-black dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
 					<span>Start a Project</span>
-					<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
+					<span className="bg-white text-black rounded-full p-1 w-6 h-6 flex justify-center items-center">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -102,7 +102,7 @@ const ProjectPlanning = () => {
 							/>
 						</svg>
 					</span>
-				</button>
+				</button> */}
 			</motion.div>
 		</motion.section>
 	)
