@@ -34,14 +34,14 @@ const Drones = () => {
           >
             Drones have rapidly evolved from novelties to essential tools across industries, revolutionizing operations with enhanced efficiency, accuracy, and safety. Logiicdev is at the forefront of this evolution, advancing drone technology through precision tracking.
           </motion.p>
-          <motion.button
+          {/* <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md shadow-lg"
           >
             Learn More
-          </motion.button>
+          </motion.button> */}
         </div>
       </div>
 

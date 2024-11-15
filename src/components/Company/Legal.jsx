@@ -110,9 +110,9 @@ const Legal = () => {
 					Sie erreichen uns unter folgenden Kontaktdaten:
 				</p>
 				<div className="text-lg mb-2">
-					<p>Logiicdev e.U.</p>
+					<p>Logiicdev .GmbH</p>
 					<p>Krottendorfer Str. 72/1</p>
-					<p>8052 Graz</p>
+					<p>8052 Graz, Austria</p>
 				</div>
 				<div className="text-lg mb-2">
 					<p>Phone: +43 676 4639222</p>

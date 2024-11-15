@@ -37,7 +37,7 @@ const HeroSection = () => {
 		<motion.section
 			initial="hidden"
 			animate="visible"
-			className="bg-[#FAF9F5] dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-br-[800px] flex flex-col lg:flex-row items-center justify-between"
+			className="bg-[#ebeae5] dark:bg-[#D4F0F0] text-white p-6 sm:p-10 rounded-br-[800px] flex flex-col lg:flex-row items-center justify-between"
 		>
 			{/* Left side - Text content */}
 			<motion.div
@@ -105,11 +105,11 @@ const HeroSection = () => {
 					<AnimatePresence>
 						{isPopupOpen && <ContactPopup onClose={handleClosePopup} />}
 					</AnimatePresence>
-					<Link to="/aboutus">
+					{/*<Link to="/aboutus">
 						<button className="border border-[#ffcc00] text-[#000] dark:border-[#256867] dark:text-[#256867] dark:hover:bg-[#f0f8ee] font-medium py-2 px-6 rounded-lg hover:bg-gray-100">
 							Learn More
 						</button>
-					</Link>
+					</Link>*/}
 				</div>
 			</motion.div>
 
