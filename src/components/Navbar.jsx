@@ -126,11 +126,13 @@ const Navbar = () => {
 						onMouseEnter={handleCompanyMouseEnter}
 						onMouseLeave={handleCompanyMouseLeave}
 					>
-						<motion.div variants={linkVariants} whileHover="hover">
-							<p className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-								Company
-							</p>
-						</motion.div>
+						<Link to="/aboutus">
+							<motion.div variants={linkVariants} whileHover="hover">
+								<p className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+									Company
+								</p>
+							</motion.div>
+						</Link>
 						{isCompanyDropdownOpen && (
 							<div className="absolute left-0 mt-6 w-48 bg-white dark:bg-gray-700 shadow-lg rounded-lg z-10">
 								<ul>
@@ -443,37 +445,37 @@ const Navbar = () => {
 							variants={menuVariants}
 						>
 							<Link
-								to="/iot"
+								to="/careers"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								Careers
 							</Link>
 							<Link
-								to="/careers"
+								to="/aboutus"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								About us
 							</Link>
 							<Link
-								to="/careers"
+								to="/legal"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								Legal
 							</Link>
 							<Link
-								to="/careers"
+								to="/impressum"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								Impressum
 							</Link>
 							<Link
-								to="/careers"
+								to="/datenschutz"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								Datenschutz
 							</Link>
 							<Link
-								to="/careers"
+								to="/equityplan"
 								className="block p-1 rounded-lg text-gray-900 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
 							>
 								Equality plan
