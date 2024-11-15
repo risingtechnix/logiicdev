@@ -31,7 +31,7 @@ import Opportunities from "./components/Company/Opportunities.jsx"
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "",
 		element: <App />,
 		errorElement: <ErrorPage />,
 		children: [
