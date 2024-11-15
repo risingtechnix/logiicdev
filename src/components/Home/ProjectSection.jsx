@@ -17,7 +17,7 @@ const ProjectSection = () => {
 	}, [controls, inView])
 
 	return (
-		<section ref={ref} className="container mx-auto px-6 py-12">
+		<section ref={ref} className="container mx-auto px-6 py-12 bg-gray-100 dark:bg-slate-800">
 			<div className="grid md:grid-cols-2 items-center gap-8">
 				{/* Text Content */}
 				<motion.div
@@ -29,15 +29,15 @@ const ProjectSection = () => {
 					}}
 					className="space-y-6 pl-4 ml-6"
 				>
-					<span className="bg-[#59cf75] text-white dark:bg-[#F0F8EE] dark:text-[#1D6362] text-sm font-medium px-3 py-1 rounded-full">
-						Project Planning
+					<span className="bg-[#59cf75] text-gray-900 dark:bg-[#F0F8EE] dark:text-[#1D6362] text-sm font-medium px-3 py-1 rounded-full">
+						Intelligent Solutions
 					</span>
 					<h2 className="text-4xl font-bold dark:text-white">
 						Everything that matters to your success
 					</h2>
 					<p className="text-gray-600 dark:text-gray-300">
 						Our goal is to create intelligent electronics for a connected world.
-						At logicdev, we design battery management systems, AI-powered
+						At Loggicdev, we design battery management systems, AI-powered
 						testing equipment, and FPGA solutions to meet the demands of green
 						energy, efficient design, and responsible innovation in the
 						industry.
@@ -46,7 +46,7 @@ const ProjectSection = () => {
 						Whether you're developing ICs or systems, the broad portfolio of our
 						offerings enables you to select the model that fits your needs.
 					</p>
-					<button className="flex items-center space-x-2 bg-[#02b153] hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
+					{/* <button className="flex items-center space-x-2 bg-[#02b153] hover:bg-white hover:text-[#02b153] hover:border hover:border-[#02b153] text-white dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867]  font-medium py-2 px-6 rounded-lg">
 						<span>Start a Project</span>
 						<span className="bg-white text-purple-600 rounded-full p-1 w-6 h-6 flex justify-center items-center">
 							<svg
@@ -64,7 +64,7 @@ const ProjectSection = () => {
 								/>
 							</svg>
 						</span>
-					</button>
+					</button> */}
 				</motion.div>
 
 				{/* Image */}

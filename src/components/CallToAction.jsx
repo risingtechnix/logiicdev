@@ -18,7 +18,7 @@ const CallToAction = () => {
 			</p>
 
 			{/* Button */}
-			<Link to="/careers">
+			<Link to="/fpgaAndAi">
 				<button className="flex items-center px-6 py-3 bg-green-700 text-white font-medium rounded-md hover:bg-green-800 transition">
 					Explore Now
 					<svg

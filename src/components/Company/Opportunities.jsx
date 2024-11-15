@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaUserGraduate, FaClock, FaBriefcase, FaBook, FaRocket, FaUserTie } from "react-icons/fa";
+import BoardWriting from "../../assets/BoardWriting.webp"
 
 const Opportunities = () => {
   // Animation variants
@@ -81,6 +82,14 @@ const Opportunities = () => {
       </div>
 
       {/* Team Member Testimonial - Vertical Card */}
+      <div className="text-center my-16">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
+          Team Member Reviews
+        </h1>
+        <p className="text-lg text-gray-600 mt-4 dark:text-gray-200">
+        Honest Insights from Team Collaborations
+        </p>
+      </div>
       <motion.div
         ref={cardRefs[5]}
         variants={fadeInVariant}
@@ -88,9 +97,10 @@ const Opportunities = () => {
         animate={isCardInView[5] ? "visible" : "hidden"}
         className="max-w-sm mx-auto mt-16 bg-white p-8 rounded-lg shadow-lg text-center dark:bg-[#121524]"
       >
-        <h3 className="text-xl dark:text-gray-200 font-semibold text-gray-800 mb-2">Team Member</h3>
+        <img src={BoardWriting} alt="" />
+        <h3 className="text-xl dark:text-gray-200 font-semibold text-gray-800 my-2">Team Member</h3>
         <p className="text-gray-600 dark:text-gray-300 italic">
-          "I have gained experiences and growth at LogiicDev. The collaborative environment, continuous learning opportunities, and innovative projects have helped me develop both personally and professionally. These experiences reflect the supportive culture and dynamic challenges that make Logiicdev an inspiring place to work."
+          "I have gained experiences and growth at Logiicdev. The collaborative environment, continuous learning opportunities, and innovative projects have helped me develop both personally and professionally. These experiences reflect the supportive culture and dynamic challenges that make Logiicdev an inspiring place to work."
         </p>
       </motion.div>
     </div>
