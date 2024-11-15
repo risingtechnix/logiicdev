@@ -126,7 +126,7 @@ const Navbar = () => {
 						onMouseEnter={handleCompanyMouseEnter}
 						onMouseLeave={handleCompanyMouseLeave}
 					>
-						<Link to="/aboutus">
+							<Link to="/aboutus">
 							<motion.div variants={linkVariants} whileHover="hover">
 								<p className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
 									Company
