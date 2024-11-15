@@ -1,6 +1,6 @@
 import React from "react"
 import {motion} from "framer-motion"
-import BoardWriting from "../../assets/BoardWriting.webp"
+import BoardWriting from "../../assets/About us Image.jpg"
 import {FaCheck} from "react-icons/fa"
 import {Link} from "react-router-dom"
 
@@ -90,9 +90,9 @@ const AboutUs = () => {
 							<motion.button
 								whileHover={{scale: 1.05}}
 								whileTap={{scale: 0.95}}
-								className="mt-6 px-6 py-3 bg-yellow-500 text-black dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867] font-semibold rounded hover:bg-yellow-600 transition duration-200"
+								className="mt-6 px-6 py-3 bg-yellow-400 text-gray-800 dark:bg-[#f0f8ee] dark:text-[#256867] dark:hover:border-[#256867] font-semibold rounded hover:bg-yellow-600 transition duration-200"
 							>
-								CHECK WITH US
+								Connect With Us
 							</motion.button>
 						</Link>
 					</motion.div>

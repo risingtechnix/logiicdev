@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CheckIcon from "../../assets/Check icon.png";
+import { Link } from "react-router-dom";
 
 function SearchJobs() {
   const Cards = [
@@ -88,12 +89,14 @@ function SearchJobs() {
                     className="w-5 h-5 mr-6"
                   />
                   {point}
-                </li>   
+                </li>
               </ul>
             ))}
-            <button className="mt-6 md:mt-8 px-6 md:px-8 py-3 md:py-4 dark:bg-blue-900 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300">
-              <a href="contact@logiicdev.com">Get Connected</a>
-            </button>
+            <Link to="/contact">
+              <button className="mt-6 md:mt-8 px-6 md:px-8 py-3 md:py-4 dark:bg-blue-900 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300">
+                <a href="mailto:contact@logiicdev.eu">Get Connected</a>
+              </button>
+            </Link>
           </motion.div>
         ))}
       </div>
