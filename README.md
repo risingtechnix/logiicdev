@@ -1,6 +1,6 @@
 # React + Vite
 
-Company's website
+Logiicdev Company's website
 
 Working Developers Amar and Kunal
 
