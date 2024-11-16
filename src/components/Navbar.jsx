@@ -2,6 +2,7 @@ import {useState, useEffect} from "react"
 import {Link} from "react-router-dom"
 import {MoonIcon, SunIcon, ArrowRightIcon} from "@heroicons/react/24/solid"
 import {motion} from "framer-motion"
+import Logo from "../assets/logo.png"
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
@@ -100,11 +101,7 @@ const Navbar = () => {
 		<nav className="bg-[#FAF9F5] dark:bg-gray-900 px-4 sm:px-6 lg:px-8">
 			<div className="flex justify-between h-16">
 				<Link to="/" className="flex-shrink-0 flex items-center">
-					<img
-						className="block h-8 w-auto"
-						src="src/assets/logo.png"
-						alt="Logo"
-					/>
+					<img className="block h-8 w-auto" src={Logo} alt="Logo" />
 					<span className="ml-2 font-bold text-3xl text-[#02b153] dark:text-white">
 						Logiicdev
 					</span>
@@ -126,7 +123,7 @@ const Navbar = () => {
 						onMouseEnter={handleCompanyMouseEnter}
 						onMouseLeave={handleCompanyMouseLeave}
 					>
-							<Link to="/aboutus">
+						<Link to="/aboutus">
 							<motion.div variants={linkVariants} whileHover="hover">
 								<p className="text-gray-900 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
 									Company
