@@ -41,95 +41,95 @@ const router = createBrowserRouter(
 					element: <Home />,
 				},
 				{
-					path: "/solution",
+					path: "solution",
 					element: <Solution />,
 				},
 				{
-					path: "/product",
+					path: "product",
 					element: <Product />,
 				},
 				{
-					path: "/company",
+					path: "company",
 					element: <Company />,
 				},
 				{
-					path: "/careers",
+					path: "careers",
 					element: <Careers />,
 				},
 				{
-					path: "/aboutus",
+					path: "aboutus",
 					element: <AboutUs />,
 				},
 				{
-					path: "/legal",
+					path: "legal",
 					element: <Legal />,
 				},
 				{
-					path: "/impressum",
+					path: "impressum",
 					element: <Impressum />,
 				},
 				{
-					path: "/datenschutz",
+					path: "datenschutz",
 					element: <Datenschutz />,
 				},
 				{
-					path: "/equityplan",
+					path: "equityplan",
 					element: <EquityPlan />,
 				},
 				{
-					path: "/research",
+					path: "research",
 					element: <Research />,
 				},
 				{
-					path: "/contact",
+					path: "contact",
 					element: <Contact />,
 				},
 				{
-					path: "/product1",
+					path: "product1",
 					element: <Product1 />,
 				},
 				{
-					path: "/product2",
+					path: "product2",
 					element: <Product2 />,
 				},
 				{
-					path: "/product3",
+					path: "product3",
 					element: <Product3 />,
 				},
 				{
-					path: "/product4",
+					path: "product4",
 					element: <Product4 />,
 				},
 				{
-					path: "/iot",
+					path: "iot",
 					element: <Iot />,
 				},
 				{
-					path: "/energyEfficiency",
+					path: "energyEfficiency",
 					element: <EnergyEfficiency />,
 				},
 				{
-					path: "/mobility",
+					path: "mobility",
 					element: <Mobility />,
 				},
 				{
-					path: "/drones",
+					path: "drones",
 					element: <Drones />,
 				},
 				{
-					path: "/fpgaAndAi",
+					path: "fpgaAndAi",
 					element: <FpgaAndAi />,
 				},
 				{
-					path: "/testing",
+					path: "testing",
 					element: <Testing />,
 				},
 				{
-					path: "/searchJobs",
+					path: "searchJobs",
 					element: <SearchJobs />,
 				},
 				{
-					path: "/opportunities",
+					path: "opportunities",
 					element: <Opportunities />,
 				},
 			],
