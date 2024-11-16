@@ -3,6 +3,7 @@ import {ArrowRightIcon} from "@heroicons/react/24/solid"
 import {AnimatePresence, motion} from "framer-motion"
 import ContactPopup from "../Contact/ContactPopup"
 import {useState} from "react"
+import Robot from "../../assets/robot-hero.png"
 import {Link} from "react-router-dom"
 
 const HeroSection = () => {
@@ -119,7 +120,7 @@ const HeroSection = () => {
 				className="w-full lg:w-1/2 flex justify-center lg:justify-end"
 			>
 				<img
-					src="src/assets/robot-hero.png"
+					src={Robot}
 					alt="Robot"
 					className="w-48 sm:w-64 lg:w-96 xl:w-[32rem] h-auto object-cover"
 				/>

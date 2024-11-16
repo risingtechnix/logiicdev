@@ -1,7 +1,7 @@
 import React, {useEffect} from "react"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
-
+import Team from "../../assets/team.png"
 const ProjectSection = () => {
 	// Set up animation controls
 	const controls = useAnimation()
@@ -17,7 +17,10 @@ const ProjectSection = () => {
 	}, [controls, inView])
 
 	return (
-		<section ref={ref} className="container mx-auto px-6 py-12 bg-gray-100 dark:bg-slate-800">
+		<section
+			ref={ref}
+			className="container mx-auto px-6 py-12 bg-gray-100 dark:bg-slate-800"
+		>
 			<div className="grid md:grid-cols-2 items-center gap-8">
 				{/* Text Content */}
 				<motion.div
@@ -78,7 +81,7 @@ const ProjectSection = () => {
 					className="relative"
 				>
 					<img
-						src="src\assets\team.png" // Replace with your actual image path
+						src={Team} // Replace with your actual image path
 						alt="Team at work"
 						className="w-3/4 h-auto mx-auto rounded-lg shadow-lg"
 					/>

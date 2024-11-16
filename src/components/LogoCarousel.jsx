@@ -1,60 +1,62 @@
 import React, {useEffect, useState} from "react"
 
+// Logos 1 import
+import Intel from "../assets/CarouselLogos/Trusted By/intel.webp"
+import Dialog from "../assets/CarouselLogos/Trusted By/dialog.webp"
+import AMS from "../assets/CarouselLogos/Trusted By/ams.webp"
+import Infineon from "../assets/CarouselLogos/Trusted By/infineon.webp"
+import NXP from "../assets/CarouselLogos/Trusted By/nxp.webp"
+
+// Logos 2 import
+import Anease from "../assets/CarouselLogos/Our Partners/anease.webp"
+import PHO_AT from "../assets/CarouselLogos/Our Partners/pho_AT.webp"
+import Photonic_Hub from "../assets/CarouselLogos/Our Partners/photonic_hub.webp"
+import Photonic from "../assets/CarouselLogos/Our Partners/photonic.webp"
+import SALPS from "../assets/CarouselLogos/Our Partners/SALPS.webp"
+import Seperate_Esabic from "../assets/CarouselLogos/Our Partners/seperate_esabic.webp"
+import SPG from "../assets/CarouselLogos/Our Partners/SPG.webp"
+// logos 3 import
+import FFG_LOGO from "../assets/CarouselLogos/Supported/ffg_logo.webp"
+import SFG from "../assets/CarouselLogos/Supported/SFG.webp"
+import WKO from "../assets/CarouselLogos/Supported/wko.webp"
+
 const logos1 = [
-	{src: "src/assets/CarouselLogos/Trusted By/intel.webp", alt: "Intel"},
+	{src: Intel, alt: "Intel"},
 	{
-		src: "src/assets/CarouselLogos/Trusted By/dialog.webp",
+		src: Dialog,
 		alt: "Dialog Semiconductor",
 	},
-	{src: "src/assets/CarouselLogos/Trusted By/ams.webp", alt: "AMS Osram"},
-	{src: "src/assets/CarouselLogos/Trusted By/infineon.webp", alt: "Infineon"},
-	{src: "src/assets/CarouselLogos/Trusted By/nxp.webp", alt: "NXP"},
+	{src: AMS, alt: "AMS Osram"},
+	{src: Infineon, alt: "Infineon"},
+	{src: NXP, alt: "NXP"},
 ]
 
 const logos2 = [
-	{src: "src/assets/CarouselLogos/Our Partners/anease.webp", alt: "Intel"},
+	{src: Anease, alt: "Intel"},
 	{
-		src: "src/assets/CarouselLogos/Our Partners/pho_AT.webp",
+		src: PHO_AT,
 		alt: "Dialog Semiconductor",
 	},
 	{
-		src: "src/assets/CarouselLogos/Our Partners/photonic_hub.webp",
+		src: Photonic_Hub,
 		alt: "AMS Osram",
 	},
-	{src: "src/assets/CarouselLogos/Our Partners/photonic.webp", alt: "Infineon"},
-	{src: "src/assets/CarouselLogos/Our Partners/SALPS.webp", alt: "NXP"},
+	{src: Photonic, alt: "Infineon"},
+	{src: SALPS, alt: "NXP"},
 	{
-		src: "src/assets/CarouselLogos/Our Partners/seperate_esabic.webp",
+		src: Seperate_Esabic,
 		alt: "NXP",
 	},
-	{src: "src/assets/CarouselLogos/Our Partners/SPG.webp", alt: "NXP"},
+	{src: SPG, alt: "NXP"},
 ]
 
 const logos3 = [
-	{src: "src/assets/CarouselLogos/Supported/ffg_logo.webp", alt: "AMS Osram"},
-	{src: "src/assets/CarouselLogos/Supported/SFG.webp", alt: "Infineon"},
-	{src: "src/assets/CarouselLogos/Supported/wko.webp", alt: "NXP"},
+	{src: FFG_LOGO, alt: "AMS Osram"},
+	{src: SFG, alt: "Infineon"},
+	{src: WKO, alt: "NXP"},
 ]
 
 const LogoCarousel = () => {
-	// const [index, setIndex] = useState(0)
-	// const [index2, setIndex2] = useState(0)
-	// const [index3, setIndex3] = useState(0)
-
-	// useEffect(() => {
-	// 	const interval = setInterval(() => {
-	// 		setIndex((prevIndex) => (prevIndex + 1) % logos1.length)
-	// 	}, 2000) // Change image every 2 seconds
-	// 	const interval2 = setInterval(() => {
-	// 		setIndex((prevIndex) => (prevIndex + 1) % logos2.length)
-	// 	}, 2000)
-	// 	// const interval3 = setInterval(() => {
-	// 	// 	setIndex((prevIndex) => (prevIndex + 1) % logos3.length)
-	// 	// }, 2000)
-
-	// 	return () => clearInterval(interval) // Cleanup on component unmount
-	// }, [])
-
 	return (
 		<>
 			<div className="overflow-hidden py-8 bg-white dark:bg-[#111827]">

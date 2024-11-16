@@ -1,6 +1,6 @@
 import React, {useRef} from "react"
 import {motion, useInView} from "framer-motion"
-
+import ProjectPlanningImage from "../../assets/ProjectPlanning.png"
 const ProjectPlanning = () => {
 	// Reference to track when the component is in view
 	const ref = useRef(null)
@@ -39,7 +39,7 @@ const ProjectPlanning = () => {
 				transition={{duration: 0.6, ease: "easeInOut"}}
 			>
 				<img
-					src="src/assets/ProjectPlanning.png" // Replace with your image path
+					src={ProjectPlanningImage} // Replace with your image path
 					alt="Project Planning"
 					className="w-64 sm:w-96 lg:w-[20rem] xl:w-[36rem] h-auto object-cover rounded-lg shadow-lg"
 				/>
