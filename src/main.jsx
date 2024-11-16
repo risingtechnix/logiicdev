@@ -29,111 +29,116 @@ import EquityPlan from "./components/Company/EquityPlan.jsx"
 import SearchJobs from "./components/Company/SearchJobs.jsx"
 import Opportunities from "./components/Company/Opportunities.jsx"
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+	[
+		{
+			path: "",
+			element: <App />,
+			errorElement: <ErrorPage />,
+			children: [
+				{
+					path: "",
+					element: <Home />,
+				},
+				{
+					path: "/solution",
+					element: <Solution />,
+				},
+				{
+					path: "/product",
+					element: <Product />,
+				},
+				{
+					path: "/company",
+					element: <Company />,
+				},
+				{
+					path: "/careers",
+					element: <Careers />,
+				},
+				{
+					path: "/aboutus",
+					element: <AboutUs />,
+				},
+				{
+					path: "/legal",
+					element: <Legal />,
+				},
+				{
+					path: "/impressum",
+					element: <Impressum />,
+				},
+				{
+					path: "/datenschutz",
+					element: <Datenschutz />,
+				},
+				{
+					path: "/equityplan",
+					element: <EquityPlan />,
+				},
+				{
+					path: "/research",
+					element: <Research />,
+				},
+				{
+					path: "/contact",
+					element: <Contact />,
+				},
+				{
+					path: "/product1",
+					element: <Product1 />,
+				},
+				{
+					path: "/product2",
+					element: <Product2 />,
+				},
+				{
+					path: "/product3",
+					element: <Product3 />,
+				},
+				{
+					path: "/product4",
+					element: <Product4 />,
+				},
+				{
+					path: "/iot",
+					element: <Iot />,
+				},
+				{
+					path: "/energyEfficiency",
+					element: <EnergyEfficiency />,
+				},
+				{
+					path: "/mobility",
+					element: <Mobility />,
+				},
+				{
+					path: "/drones",
+					element: <Drones />,
+				},
+				{
+					path: "/fpgaAndAi",
+					element: <FpgaAndAi />,
+				},
+				{
+					path: "/testing",
+					element: <Testing />,
+				},
+				{
+					path: "/searchJobs",
+					element: <SearchJobs />,
+				},
+				{
+					path: "/opportunities",
+					element: <Opportunities />,
+				},
+			],
+		},
+	],
 	{
-		path: "/",
-		element: <App />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				path: "",
-				element: <Home />,
-			},
-			{
-				path: "/solution",
-				element: <Solution />,
-			},
-			{
-				path: "/product",
-				element: <Product />,
-			},
-			{
-				path: "/company",
-				element: <Company />,
-			},
-			{
-				path: "/careers",
-				element: <Careers />,
-			},
-			{
-				path: "/aboutus",
-				element: <AboutUs />,
-			},
-			{
-				path: "/legal",
-				element: <Legal />,
-			},
-			{
-				path: "/impressum",
-				element: <Impressum />,
-			},
-			{
-				path: "/datenschutz",
-				element: <Datenschutz />,
-			},
-			{
-				path: "/equityplan",
-				element: <EquityPlan />,
-			},
-			{
-				path: "/research",
-				element: <Research />,
-			},
-			{
-				path: "/contact",
-				element: <Contact />,
-			},
-			{
-				path: "/product1",
-				element: <Product1 />,
-			},
-			{
-				path: "/product2",
-				element: <Product2 />,
-			},
-			{
-				path: "/product3",
-				element: <Product3 />,
-			},
-			{
-				path: "/product4",
-				element: <Product4 />,
-			},
-			{
-				path: "/iot",
-				element: <Iot />,
-			},
-			{
-				path: "/energyEfficiency",
-				element: <EnergyEfficiency />,
-			},
-			{
-				path: "/mobility",
-				element: <Mobility />,
-			},
-			{
-				path: "/drones",
-				element: <Drones />,
-			},
-			{
-				path: "/fpgaAndAi",
-				element: <FpgaAndAi />,
-			},
-			{
-				path: "/testing",
-				element: <Testing />,
-			},
-			{
-				path: "/searchJobs",
-				element: <SearchJobs />,
-			},
-			{
-				path: "/opportunities",
-				element: <Opportunities />,
-			},
-		],
-	},
-])
+		basename: "/logiicdev/",
+	}
+)
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
