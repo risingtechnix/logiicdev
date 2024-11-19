@@ -135,7 +135,7 @@ const Footer = () => {
 					</div>
 
 					{/* Resources Section */}
-					<div>
+					{/* <div>
 						<h5 className="font-bold mb-4">RESOURCES</h5>
 						<ul className="space-y-2">
 							<li>
@@ -164,7 +164,7 @@ const Footer = () => {
 								</a>
 							</li>
 						</ul>
-					</div>
+					</div> */}
 
 					{/* Social Media and Contact Info */}
 					<div>
