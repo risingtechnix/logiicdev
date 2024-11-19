@@ -20,9 +20,15 @@ export default {
 			// backgroundSize: {
 			// 	"200%": "200%",
 			// },
-			fontFamily:{
-				poppins: ["Poppins", "sans-serif"]
-			}
+			fontFamily: {
+				poppins: ["Poppins", "sans-serif"],
+			},
+			backgroundImage: {
+				iot: "url('src/assets/Solution/IOT_Pencil_draing.webp')",
+				energyEfficiency: "url('src/assets/Solution/Energy Efficiency.webp')",
+				drones: "url('src/assets/Solution/drone.jpeg')",
+				mobility: "url('src/assets/Solution/mobility_green.jpeg')",
+			},
 		},
 	},
 	plugins: [],
